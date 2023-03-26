@@ -1,0 +1,45 @@
+%btn {
+  font-weight: 400;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #E06733;
+
+  &:hover {
+    color: #fff;
+    background-color: #E06733;
+    transition: all .3s;
+  }
+
+  &:disabled {
+    background-color: initial;
+    color: #E06733;
+  }
+
+  &.active {
+    color: #fff;
+    background-color: #E06733;
+  }
+  
+}
+
+.primary-btn {
+  @extend %btn;
+
+  text-transform: uppercase;
+  margin-top: 25px;
+  padding: 10px 27px;
+  font-size: $small-font-size;
+  color: #010201;
+}
+
+.secondary-btn {
+  @extend %btn;
+
+  font-family: $secondary-font-family;
+  color: #E06733;
+  font-size: $regular-font-size;
+  min-width: 161px;
+  padding-block: 12px;
+  border-radius: 5px;
+  margin-inline: 15px;
+}

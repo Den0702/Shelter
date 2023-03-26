@@ -1,0 +1,61 @@
+.main-header {
+  font-weight: $primary-font-weight;
+
+  .nav {
+    @include flexbox($flex-wrap: nowrap);
+    @include flex-align(space-between, center);
+
+    padding-block: 7px;
+
+    .logo {
+
+      align-self: flex-start;
+      
+      .logo-title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+      }
+
+      .logo-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin: 0;
+      }
+    }
+
+    .menu {
+      flex-basis: 443px;  
+      @include flexbox($flex-wrap: nowrap);
+      justify-content: space-between;
+
+      .menu-item {
+        font-family: $secondary-font-family;
+        font-weight: $primary-font-weight;
+
+        a {
+          color: #CDCDCD;
+
+          &:hover {
+            color: #E06733;
+            transition: color .3s;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+

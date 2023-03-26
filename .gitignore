@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# screenshots
+screenshots and other files to ignore/
