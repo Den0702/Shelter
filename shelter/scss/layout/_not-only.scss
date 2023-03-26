@@ -1,0 +1,38 @@
+.not-only {
+
+  .not-only-bg {
+    background-image: url(../assets/img/start-screen-puppy.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding-top: 165px;
+    margin-top: 61px;
+
+    .not-only-description {
+      width: 534.6px;
+      font-size: $regular-font-size;
+      padding-bottom: 226px;
+      margin-right: auto;
+
+      .main-heading {
+        font-size: 45px;
+        margin: 14px 0 44px 0;
+        font-weight: 400;
+        color: #717171;
+        width: 60%;
+        line-height: 1.2
+      }
+
+      &-paragraph {
+        //@include primary-text(35px); //line-height is the parameter
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+
+        color: #CDCDCD;
+      }
+    }
+  }
+
+}
