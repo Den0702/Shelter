@@ -1,12 +1,14 @@
 %btn {
+  font-family: $secondary-font-family;
   font-weight: 400;
+  font-size: 17px;
   background-color: transparent;
-  border-radius: 9px;
-  border: 1px solid #E06733;
+  border-radius: 25px;
+  border: 0;
+  letter-spacing: 0.06em;
 
   &:hover {
-    color: #fff;
-    background-color: #E06733;
+    background-color: #FDDCC4;
     transition: all .3s;
   }
 
@@ -25,10 +27,11 @@
 .primary-btn {
   @extend %btn;
 
-  text-transform: uppercase;
-  margin-top: 25px;
-  padding: 10px 27px;
-  font-size: $small-font-size;
+  margin-top: 30px;
+  padding: 16px 27px;
+  font-size: 17px;
+  min-width: 205px;
+  background-color: #F1CDB3;
   color: #010201;
 }
 
@@ -37,7 +40,7 @@
 
   font-family: $secondary-font-family;
   color: #E06733;
-  font-size: $regular-font-size;
+  font-size: 20px;
   min-width: 161px;
   padding-block: 12px;
   border-radius: 5px;

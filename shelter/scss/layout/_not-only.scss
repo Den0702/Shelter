@@ -1,25 +1,26 @@
 .not-only {
-
+  padding: 77px 0 0;
+  
   .not-only-bg {
     background-image: url(../assets/img/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    padding-top: 165px;
-    margin-top: 61px;
+    padding-top: 0;
 
     .not-only-description {
-      width: 534.6px;
+      width: 472px;
       font-size: $regular-font-size;
-      padding-bottom: 226px;
+      padding: 167px 0 240px;
       margin-right: auto;
 
       .main-heading {
-        font-size: 45px;
-        margin: 14px 0 44px 0;
+        font-size: 44px;
         font-weight: 400;
-        color: #717171;
-        width: 60%;
-        line-height: 1.2
+        color: $color-light-l;
+        width: 67%;
+        line-height: 57px;
+        letter-spacing: initial;
+        margin-bottom: 38px;
       }
 
       &-paragraph {
