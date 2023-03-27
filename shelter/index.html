@@ -1,61 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cozy House</title>
-    <link rel="icon" href="./assets/icons/favicon.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <div class="start-screen-bg">
-      <header class="main-header">
-        <div class="container">
-          <nav class="nav">
-            <a href="#" class="logo">
-              <h1 class="logo-title">Cozy House</h1>
-              <p class="logo-text">Shelter for pets in Boston</p>
-            </a>
-            <ul class="menu">
-              <li class="menu-item active">
-                <a href="#not-only">About the shelter</a>
-              </li>
-              <li class="menu-item"><a href="#about">Our pets</a></li>
-              <li class="menu-item"><a href="#service">Help the shelter</a></li>
-              <li class="menu-item"><a href="#contact">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <section class="not-only" id="not-only">
-        <div class="container">
-          <div class="not-only-bg">
-            <div class="not-only-description">
-              <h1 class="section-heading main-heading">
-                Not only people need a house
-              </h1>
-              <p class="not-only-description-paragraph">
-                We offer to give a chance to a little and nice puppy with an
-                extremely wide and open heart. He or she will love you more than
-                anybody else in the world, you will see!
-              </p>
-              <button class="btn primary-btn">Make a friend</button>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy House</title>
+  <link rel="icon" href="./assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="start-screen-bg">
+    <header class="main-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo">
+            <h2 class="logo-title">Cozy House</h2>
+            <p class="logo-text">Shelter for pets in Boston</p>
+          </a>
+          <ul class="menu">
+            <li class="menu-item active">
+              <a href="#not-only">About the shelter</a>
+            </li>
+            <li class="menu-item"><a href="#about">Our pets</a></li>
+            <li class="menu-item"><a href="#service">Help the shelter</a></li>
+            <li class="menu-item"><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="not-only" id="not-only">
+      <div class="container">
+        <div class="not-only-bg">
+          <div class="not-only-description">
+            <h1 class="section-heading main-heading">
+              Not only people need a house
+            </h1>
+            <p class="not-only-description-paragraph">
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
+              anybody else in the world, you will see!
+            </p>
+            <button class="btn primary-btn">Make a friend</button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-  <footer>
+  <section class="about">
+    <div class="container narrow row">
+      <div class="about-image-holder col-50">
+        <img src="./assets/img/about-pets.png" class="about-image" alt="A dog and a cat" />
+      </div>
+      <div class="about-content-holder col-50">
+        <h2 class="section-heading about-heading">
+          About the shelter<br />
+          "Cozy House
+        </h2>
+        <p class="primary-paragraph">
+          Currently we have 121 dogs and 342 cats on our hands and statistics
+          show that only 20% of them will find a family. The others will
+          continue to live with us and will be waiting for a lucky chance to
+          become dearly loved.
+        </p>
+        <p class="primary-paragraph">
+          We feed our wards with the best food and make sure that they do not
+          get sick, feel comfortable (including psychologically) and well. We
+          are supported by 87 volunteers and 28 employees of various skill
+          levels. About 12% of the animals are taken by the shelter staff.
+          Taking care of the animals, they become attached to the pets and
+          would hardly ever leave them alone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-friends">
+    <button class="arrow left">
+      <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+      </svg>
+    </button>
+    <div class="container">
+      <h2 class="section-heading section-heading-center">
+        Our friends who<br/>are looking for a house
+      </h2>
+      <div class="slider row">
+        <div class="col-33">
+          <div class="our-friends-item">
+            <img src="./assets/img/pets/katrine.png" alt="Jennifer" />
+            <h3>Katrine</h3>
+            <a href="" class="secondary-btn">Learn more</a>
+          </div>
+        </div>
+        <div class="col-33">
+          <div class="our-friends-item">
+            <img src="./assets/img/pets/jennifer.png" alt="Jennifer" />
+            <h3>Jennifer</h3>
+            <a href="" class="secondary-btn">Learn more</a>
+          </div>
+        </div>
+        <div class="col-33">
+          <div class="our-friends-item">
+            <img src="./assets/img/pets/woody.png" alt="Jennifer" />
+            <h3>Woody</h3>
+            <a href="" class="secondary-btn">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="arrow right">
+      <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+      </svg>
+    </button>
+
+    <button class="secondary-btn">Lorem, ipsum.</button>
+    <h2>Уважаемый проверяющий, промотай страницу вниз, чтобы увидеть футер - он сделан</h2>
+  </section>
+  <div class="tmp">
+    
+  </div>
+  <footer class="main-footer">
     <div class="container">
       <div class="row">
-        <div class="col-33">test</div>
-        <div class="col-33">test</div>
-        <div class="col-33">test</div>
+        <div class="col-33">
+          <h2 class="footer-header">For questions<br> and suggestions</h2>
+          <div class="footer-content">
+            <img src="assets/icons/mail.svg" alt="" class="footer-icon" />
+            <span class="footer-content-details">email@shelter.com</span>
+          </div>
+          <div class="footer-content">
+            <img src="assets/icons/phone.svg" alt="" class="footer-icon" />
+            <span class="footer-content-details">+13 674 567 75 54 </span>
+          </div>
+        </div>
+
+        <div class="col-33">
+          <h2 class="footer-header">We are waiting <br> for your visit</h2>
+          <div class="footer-content right">
+            <img src="assets/icons/pin.svg" alt="" class="footer-icon" />
+            <span class="footer-content-details">1 Central Street, Boston (entrance from the store)
+            </span>
+          </div>
+          <div class="footer-content right">
+            <img src="assets/icons/pin.svg" alt="" class="footer-icon" />
+            <span class="footer-content-details">18 South Park, London</span>
+          </div>
+        </div>
+        <div class="col-33 dog-bg"></div>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

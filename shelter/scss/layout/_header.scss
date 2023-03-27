@@ -5,7 +5,7 @@
     @include flexbox($flex-wrap: nowrap);
     @include flex-align(space-between, center);
 
-    padding-block: 7px;
+    padding-block: 14px;
 
     .logo {
 
@@ -14,17 +14,16 @@
       .logo-title {
         font-family: 'Georgia';
         font-style: normal;
-        font-weight: 400;
         font-size: 32px;
         line-height: 35px;
         letter-spacing: 0.06em;
         color: #F1CDB3;
+        margin: 14px 0 10px;
       }
 
       .logo-text {
         font-family: 'Arial';
         font-style: normal;
-        font-weight: 400;
         font-size: 13px;
         line-height: 15px;
         letter-spacing: 0.1em;
@@ -41,12 +40,21 @@
       .menu-item {
         font-family: $secondary-font-family;
         font-weight: $primary-font-weight;
+        padding: 19px 0 8px;
 
+        &.active {
+          border-bottom: 3px solid $bg-color-primary;
+          
+          a { 
+            color: #FAFAFA;
+          }
+        }
+        
         a {
           color: #CDCDCD;
 
           &:hover {
-            color: #E06733;
+            color: #FAFAFA;
             transition: color .3s;
           }
         }

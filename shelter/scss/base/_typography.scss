@@ -1,0 +1,39 @@
+a,
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: $primary-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font-family;
+  font-weight: 400;
+}
+
+.section-heading {
+  color: $color-dark-l;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+
+  &.section-heading-center {
+    text-align: center;
+    line-height: 45px;
+  }
+}
+
+.primary-paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $main-text-color;
+}

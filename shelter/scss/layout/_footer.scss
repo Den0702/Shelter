@@ -1,0 +1,62 @@
+.main-footer {
+  background: url('../../assets/img/noise_transparent.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
+   .col-33 {
+    padding-bottom: 45px;
+    padding-top: 55px;
+
+   } 
+
+   .col-33:nth-of-type(3) {
+    margin-top: 40px;
+   } 
+
+   .col-33:nth-of-type(2), 
+   .col-33:nth-of-type(3) {
+    padding-left: 39px;
+   } 
+
+  .dog-bg {
+    background-image: url("../../assets/img/footer-puppy.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 300px;
+  }
+
+  .footer-header {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    font-size: 20px;
+    line-height: 23px;
+    color: $bg-color-primary;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    padding: 19px 0px;
+    font-family: $secondary-font-family;
+
+    &.right {
+      padding: 13px 0 13px;
+    }
+    .footer-icon {
+        height: 100%;
+        width: auto;
+    }
+
+    .footer-content-details {
+      margin-left: 25px;
+    }
+  }
+
+/*   .footer-content:nth-child(2):first-of-type {
+    padding-top: 20px;
+  } */
+
+
+}

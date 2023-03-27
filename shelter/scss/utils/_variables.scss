@@ -1,11 +1,15 @@
 /* |SECTION PROPERTIES|  */
 
 /* background colors */
-$bg-color-section: #EDF2EC;
+$color-light-l: #F6F6F6;
+$bg-color-section: $color-light-l;
+$color-light-xl: #ffffff;
 
-/* text-colors */
-$main-text-color: #636060;
-
+/* font-colors */
+$main-text-color: #4C4C4C;
+$color-dark-l: #545454;
+$color-dark-m: #B2B2B2;
+$color-dark-3xl: #292929;
 
 /* |FONT PROPERTIES| */
 
@@ -20,3 +24,8 @@ $small-font-size: 16px;
 /*font weights */
 $primary-font-weight: 400;
 $secondary-font-weight: 700;
+
+
+/* Buttons and sections bg colors */
+$bg-color-primary: #F1CDB3;
+$bg-color-primary-light: #FDDCC4;
