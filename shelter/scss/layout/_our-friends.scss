@@ -1,20 +1,37 @@
-.tmp {
-  height: 1106px;
-}
-
 .our-friends {
   position: relative;
   text-align: center;
-  padding: 88px 0;
-  background: #F6F6F6;
+  padding: 81px 0 99px;
+  background: #f6f6f6;
+
+  .our-friends-btn {
+    background: #F1CDB3;
+    padding: 13px 42px;
+
+    &:hover {
+      background: #FDDCC4;
+      border-color: #FDDCC4;
+    }
+  }
 
   .slider {
     padding: 0 56px;
+    position: relative;
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      .col-33:nth-of-type(1) {
+        display: none;
+      }
+      .col-33 {
+        width: 50%;
+      }
+    }
   }
 
   button.arrow {
     position: absolute;
-    top: 56%;
+    top: 50%;
 
     border: #e06733 2px solid;
     border-radius: 50%;
@@ -24,37 +41,38 @@
     height: 50px;
 
     &.right {
-      right: 193px;
+      right: 0;
+      
+      & > svg {
+        transform: rotate(180deg);
+      }
     }
 
     &.left {
-      left: 193px;
+      left: 0;
+    }
+
+    &.right:hover, &.left:hover{
+      transition: all .3s;
+      background: #FDDCC4;
+      border-color: #FDDCC4;
     }
   }
-  
+
   .our-friends-item {
     text-align: center;
-    /* background-color: #fafafa; */
     width: 73.2%;
     margin: auto;
-    border-radius: 5px;
-    background: #FFFFFF;
+    border-radius: 10px;
+    background: #ffffff;
     overflow: hidden;
     padding-bottom: 30px;
     margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
 
     &:hover {
-      background-color: white;
-    }
-
-    .secondary-btn {
-      color: #fff;
-      background-color: #e06733;
-      transition: all 0.3s;
-
-      &:hover {
-
-      }
+      box-shadow: 0 5px 20px rgb(0 0 0 / 25%);
     }
 
     h3 {

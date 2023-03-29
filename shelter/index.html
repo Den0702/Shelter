@@ -23,9 +23,9 @@
             <li class="menu-item active">
               <a href="#not-only">About the shelter</a>
             </li>
-            <li class="menu-item"><a href="#about">Our pets</a></li>
-            <li class="menu-item"><a href="#service">Help the shelter</a></li>
-            <li class="menu-item"><a href="#contact">Contacts</a></li>
+            <li class="menu-item"><a href="#">Our pets</a></li>
+            <li class="menu-item"><a href="#help">Help the shelter</a></li>
+            <li class="menu-item"><a href="#main-footer">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -42,7 +42,9 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button class="btn primary-btn">Make a friend</button>
+            <button class="btn primary-btn">
+              <a href="#our-friends">Make a friend</a>
+            </button>
           </div>
         </div>
       </div>
@@ -77,17 +79,17 @@
     </div>
   </section>
 
-  <section class="our-friends">
-    <button class="arrow left">
-      <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-      </svg>
-    </button>
+  <section class="our-friends" id="our-friends">
     <div class="container">
       <h2 class="section-heading section-heading-center">
-        Our friends who<br/>are looking for a house
+        Our friends who<br />are looking for a house
       </h2>
       <div class="slider row">
+        <button class="arrow left">
+          <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+          </svg>
+        </button>
         <div class="col-33">
           <div class="our-friends-item">
             <img src="./assets/img/pets/katrine.png" alt="Jennifer" />
@@ -109,25 +111,92 @@
             <a href="" class="secondary-btn">Learn more</a>
           </div>
         </div>
+        <button class="arrow right">
+          <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+          </svg>
+        </button>
       </div>
     </div>
-    <button class="arrow right">
-      <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-      </svg>
-    </button>
 
-    <button class="secondary-btn">Lorem, ipsum.</button>
-    <h2>Уважаемый проверяющий, промотай страницу вниз, чтобы увидеть футер - он сделан</h2>
+    <button class="secondary-btn our-friends-btn">Get to know the rest</button>
   </section>
-  <div class="tmp">
-    
-  </div>
-  <footer class="main-footer">
+  <section class="help" id="help">
+    <div class="container">
+      <h2 class="section-heading section-heading-center">
+        How you can help<br />our shelter
+      </h2>
+
+      <div class="row">
+        <div class="infographic">
+          <img src="./assets/icons/icon-pet-food.svg" alt="vitamins" />
+          <h3>Pet food</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-transportation.svg" alt="vitamins" />
+          <h3>Transportation</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-toys.svg" alt="vitamins" />
+          <h3>Toys</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-bowls-and-cups.svg" alt="vitamins" />
+          <h3>Bowls and cups</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-shampoos.svg" alt="vitamins" />
+          <h3>Shampoos</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-vitamins.svg" alt="vitamins" />
+          <h3>Vitamins</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-medicines.svg" alt="vitamins" />
+          <h3>Medicines</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-collars-leashes.svg" alt="vitamins" />
+          <h3>Collars / leashes</h3>
+        </div>
+        <div class="infographic">
+          <img src="./assets/icons/icon-sleeping-area.svg" alt="vitamins" />
+          <h3>Sleeping areas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="in-addition">
+    <div class="container narrow">
+      <div class="row">
+        <div class="col-50 donation-dog-image">
+          <img src="./assets/img/donation-dog.png" class="about-image" alt="A dog and a cat" />
+        </div>
+        <div class="col-50 text-content">
+          <h2 class="section-heading in-addition-heading">
+            You can also <br> make a donation
+          </h2>
+          <h4 class="bank-info">Name of the bank / Type of bank account</h4>
+          <div class="bank-card">
+            <img class="credit-card-img" src="./assets/icons/credit-card.svg" alt="Credit Card">
+            <p class="bank-card-num">8380 2880 8028 8791 7435</p>
+          </div>
+          <p class="legality-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer" id="main-footer">
     <div class="container">
       <div class="row">
         <div class="col-33">
-          <h2 class="footer-header">For questions<br> and suggestions</h2>
+          <h2 class="footer-header">
+            For questions<br />
+            and suggestions
+          </h2>
           <div class="footer-content">
             <img src="assets/icons/mail.svg" alt="" class="footer-icon" />
             <span class="footer-content-details">email@shelter.com</span>
@@ -139,7 +208,10 @@
         </div>
 
         <div class="col-33">
-          <h2 class="footer-header">We are waiting <br> for your visit</h2>
+          <h2 class="footer-header">
+            We are waiting <br />
+            for your visit
+          </h2>
           <div class="footer-content right">
             <img src="assets/icons/pin.svg" alt="" class="footer-icon" />
             <span class="footer-content-details">1 Central Street, Boston (entrance from the store)
