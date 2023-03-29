@@ -7,11 +7,6 @@
   border: 0;
   letter-spacing: 0.06em;
 
-  &:hover {
-    background-color: #FDDCC4;
-    transition: all .3s;
-  }
-
   &:disabled {
     background-color: initial;
     color: #E06733;
@@ -27,22 +22,37 @@
 .primary-btn {
   @extend %btn;
 
+  &:hover {
+    background-color: #FDDCC4;
+    transition: all .3s;
+  }
+
   margin-top: 30px;
   padding: 16px 27px;
-  font-size: 17px;
   min-width: 205px;
   background-color: #F1CDB3;
   color: #010201;
+  
+  a {
+    font-size: 17px;
+    font-family: initial;
+    letter-spacing: inherit
+  }
 }
 
 .secondary-btn {
   @extend %btn;
 
   font-family: $secondary-font-family;
-  color: #E06733;
-  font-size: 20px;
-  min-width: 161px;
-  padding-block: 12px;
-  border-radius: 5px;
+  border: 2px solid #F1CDB3;
+  min-width: 187px;
+  padding: 13px 45px;
   margin-inline: 15px;
+
+  &:hover {
+    background-color: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: all .3s;
+  }
+
 }
