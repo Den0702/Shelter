@@ -324,22 +324,22 @@ h6 {
 }
 .secondary-btn:disabled, .primary-btn:disabled {
   background-color: initial;
-  color: #E06733;
+  color: #e06733;
 }
 .active.secondary-btn, .active.primary-btn {
   color: #fff;
-  background-color: #E06733;
+  background-color: #e06733;
 }
 
 .primary-btn {
   margin-top: 30px;
-  padding: 16px 27px;
-  min-width: 205px;
-  background-color: #F1CDB3;
+  padding: 16px 45px;
+  background-color: #f1cdb3;
   color: #010201;
+  display: inline-block;
 }
 .primary-btn:hover {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   transition: all 0.3s;
 }
 .primary-btn a {
@@ -350,15 +350,43 @@ h6 {
 
 .secondary-btn {
   font-family: Georgia, sans-serif;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   min-width: 187px;
   padding: 13px 45px;
   margin-inline: 15px;
 }
 .secondary-btn:hover {
-  background-color: #FDDCC4;
-  border-color: #FDDCC4;
+  background-color: #fddcc4;
+  border-color: #fddcc4;
   transition: all 0.3s;
+}
+
+.circle-btn {
+  border: #e06733 2px solid;
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+.our-friends-item {
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  background: #ffffff;
+  overflow: hidden;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.our-friends-item:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+.our-friends-item h3 {
+  margin: 30px 0 45px;
+  font-size: 20px;
 }
 
 .container {
@@ -547,17 +575,20 @@ h6 {
   background: #f6f6f6;
 }
 .our-friends .our-friends-btn {
-  background: #F1CDB3;
+  background: #f1cdb3;
   padding: 13px 42px;
 }
 .our-friends .our-friends-btn:hover {
-  background: #FDDCC4;
-  border-color: #FDDCC4;
+  background: #fddcc4;
+  border-color: #fddcc4;
 }
 .our-friends .slider {
   padding: 0 56px;
   position: relative;
   margin-bottom: 80px;
+}
+.our-friends .slider .col-33 {
+  padding: 0 25px;
 }
 @media (max-width: 768px) {
   .our-friends .slider .col-33:nth-of-type(1) {
@@ -567,48 +598,29 @@ h6 {
     width: 50%;
   }
 }
-.our-friends button.arrow {
+.our-friends button.slider-btn {
   position: absolute;
   top: 50%;
-  border: #e06733 2px solid;
-  border-radius: 50%;
-  display: block;
-  background-color: transparent;
-  width: 50px;
-  height: 50px;
 }
-.our-friends button.arrow.right {
+.our-friends button.slider-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.our-friends button.slider-btn.right {
   right: 0;
 }
-.our-friends button.arrow.right > svg {
-  transform: rotate(180deg);
+.our-friends button.slider-btn.right > svg {
+  transform: translate(-50%, -50%) rotate(180deg);
 }
-.our-friends button.arrow.left {
+.our-friends button.slider-btn.left {
   left: 0;
 }
-.our-friends button.arrow.right:hover, .our-friends button.arrow.left:hover {
+.our-friends button.slider-btn.right:hover, .our-friends button.slider-btn.left:hover {
   transition: all 0.3s;
-  background: #FDDCC4;
-  border-color: #FDDCC4;
-}
-.our-friends .our-friends-item {
-  text-align: center;
-  width: 73.2%;
-  margin: auto;
-  border-radius: 10px;
-  background: #ffffff;
-  overflow: hidden;
-  padding-bottom: 30px;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.our-friends .our-friends-item:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-}
-.our-friends .our-friends-item h3 {
-  margin: 30px 0 45px;
-  font-size: 20px;
+  background: #fddcc4;
+  border-color: #fddcc4;
 }
 
 .help {
@@ -746,6 +758,38 @@ h6 {
   .in-addition .col-50.donation-dog-image {
     order: 1;
   }
+}
+
+.pets {
+  padding: 100px 0;
+}
+.pets .row {
+  margin: 0 -15px;
+}
+.pets .col-25 {
+  padding: 0 15px;
+}
+.pets .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 73px;
+}
+.pets .pagination .pagination-link {
+  margin: 0 11px;
+  position: relative;
+}
+.pets .pagination .pagination-link span {
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 78%;
+  color: #292929;
+  letter-spacing: 0.06em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-footer {

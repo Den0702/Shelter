@@ -1,0 +1,35 @@
+.pets {
+  padding: 100px 0;
+
+  .row {
+    margin: 0 -15px;
+  }
+
+  .col-25 {
+    padding: 0 15px;
+  }
+
+  .pagination {
+    @include flexbox;
+    justify-content: center;
+    margin-top: 73px;
+
+    .pagination-link {
+      margin: 0 11px;
+      position: relative;
+
+
+      span {
+        position: absolute;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 78%;
+        color: $color-dark-3xl;
+        letter-spacing: 0.06em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

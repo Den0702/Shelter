@@ -9,34 +9,33 @@
 
   &:disabled {
     background-color: initial;
-    color: #E06733;
+    color: #e06733;
   }
 
   &.active {
     color: #fff;
-    background-color: #E06733;
+    background-color: #e06733;
   }
-  
 }
 
 .primary-btn {
   @extend %btn;
 
   &:hover {
-    background-color: #FDDCC4;
-    transition: all .3s;
+    background-color: #fddcc4;
+    transition: all 0.3s;
   }
 
   margin-top: 30px;
-  padding: 16px 27px;
-  min-width: 205px;
-  background-color: #F1CDB3;
+  padding: 16px 45px;
+  background-color: #f1cdb3;
   color: #010201;
-  
+  display: inline-block;
+
   a {
     font-size: 17px;
     font-family: initial;
-    letter-spacing: inherit
+    letter-spacing: inherit;
   }
 }
 
@@ -44,15 +43,24 @@
   @extend %btn;
 
   font-family: $secondary-font-family;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   min-width: 187px;
   padding: 13px 45px;
   margin-inline: 15px;
 
   &:hover {
-    background-color: #FDDCC4;
-    border-color: #FDDCC4;
-    transition: all .3s;
+    background-color: #fddcc4;
+    border-color: #fddcc4;
+    transition: all 0.3s;
   }
+}
 
+
+.circle-btn {
+  border: #e06733 2px solid;
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
 }
