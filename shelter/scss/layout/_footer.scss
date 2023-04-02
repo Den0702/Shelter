@@ -1,19 +1,37 @@
 .main-footer {
-  background: url('../assets/img/noise_transparent.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url("../assets/img/noise_transparent.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  @media (max-width: 992px) {
+    .container {
+      max-width: 640px;
+    }
+  }
 
   .col-33 {
     padding-bottom: 45px;
     padding-top: 56px;
+
+    @media (max-width: 992px) {
+      width: 50%;
+      padding-top: 30px;
+    }
   }
 
   .col-33:nth-of-type(3) {
     margin-top: 45px;
     margin-bottom: 5px;
+    @media (max-width: 992px) {
+      margin-top: 0;
+    }
   }
 
   .col-33:nth-of-type(2),
   .col-33:nth-of-type(3) {
     padding-left: 39px;
+
+    @media (max-width: 992px) {
+      padding-left: 20px;
+    }
   }
 
   .dog-bg {
@@ -22,6 +40,11 @@
     background-position: right;
     background-repeat: no-repeat;
     min-height: 300px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      background-position: center;
+    }
   }
 
   .footer-header {
@@ -58,6 +81,4 @@
   /*   .footer-content:nth-child(2):first-of-type {
     padding-top: 20px;
   } */
-
-
 }
