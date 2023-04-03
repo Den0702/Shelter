@@ -1,15 +1,25 @@
 .about {
-  padding-bottom: 100px;
-  @media (max-width: 992px) {
+  padding-top: 78px;
+
+  @media (max-width: 1200px) {
     padding-top: 60px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 24px 0;
   }
 
   .about-image-holder {
     text-align: center;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       order: 1;
-      margin-top: 60px;
+      margin-top: 63px;
+    }
+
+    @media (max-width: 576px) {
+      max-height: 358px;
+      margin-top: 22px;
     }
 
     .about-image {
@@ -19,9 +29,9 @@
   }
 
   .about-content-holder {
-    padding-right: 100px;
+    padding-right: 125px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       padding: 0;
     }
 

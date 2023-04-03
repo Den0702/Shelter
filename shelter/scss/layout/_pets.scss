@@ -1,18 +1,57 @@
+.pets-page {
+  .main-header {
+    .nav {
+      .logo {
+        .logo-title {
+          color: #545454;
+        }
+
+        .logo-text {
+          color: #545454;
+        }
+      }
+
+      .menu {
+        .menu-item {
+  
+          &.active {
+            border-bottom: 3px solid $bg-color-primary;
+  
+            a {
+              color: #292929;
+            }
+          }
+  
+          a {
+            color: #545454;
+  
+            &:hover {
+              color: #292929;
+              transition: color 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .pets {
-  padding: 100px 0;
+  padding: 62px 0 102px;
 
   .row {
     margin: 0 -15px;
+    margin-top: 62px;
   }
 
   .col-25 {
-    padding: 0 15px;
+    padding: 0px 19px;
   }
 
   .pagination {
     @include flexbox;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 27px;
 
     .pagination-link {
       margin: 0 11px;
@@ -23,17 +62,33 @@
       font-weight: 700;
       font-size: 22px;
 
+      &.current {
+        background-color: #F1CDB3;
+        border-color: #F1CDB3;
+      }
+
+      &.last {
+        background-color: #FDDCC4;
+        border-color: #FDDCC4;
+      }
 
       span {
         position: absolute;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 18px;
         line-height: 78%;
         color: $color-dark-3xl;
         letter-spacing: 0.06em;
+        font-weight: 400;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+
+      &.disabled-btn {
+        span {
+          color: #CDCDCD;
+        }
       }
     }
   }
