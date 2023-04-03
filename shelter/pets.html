@@ -10,23 +10,26 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
-  <div class="start-screen-bg">
-    <header class="main-header">
+<body class="pets-page">
+  <div class="start-screen-bg-pets">
+    <header class="main-header pets-header">
       <div class="container">
         <nav class="nav">
-          <a href="/index.html" class="logo">
+          <a href="/main.html" class="logo">
             <h2 class="logo-title">Cozy House</h2>
             <p class="logo-text">Shelter for pets in Boston</p>
           </a>
           <ul class="menu">
-            <li class="menu-item active">
-              <a href="#not-only">About the shelter</a>
+            <li class="menu-item">
+              <a href="/main.html#not-only">About the shelter</a>
             </li>
-            <li class="menu-item"><a href="/pets.html">Our pets</a></li>
-            <li class="menu-item"><a href="/index.html#help">Help the shelter</a></li>
+            <li class="menu-item active"><a href="/pets.html">Our pets</a></li>
+            <li class="menu-item"><a href="/main.html#help">Help the shelter</a></li>
             <li class="menu-item"><a href="#main-footer">Contacts</a></li>
           </ul>
+          <div class="mobile-hamburger">
+            <span class="hamburger-line"></span>
+          </div>
         </nav>
       </div>
     </header>
@@ -97,11 +100,11 @@
         </div>
       </div>
       <div class="pagination">
-        <a href="" class="circle-btn pagination-link first"><!-- 
+        <a href="" class="circle-btn pagination-link first disabled-btn"><!-- 
           <img src="./assets/icons/arrows_and__other_button_components/double_lower_than_light.svg" alt=""> -->
           <span><<</span>
         </a>
-        <a href="" class="circle-btn pagination-link prev"><!-- 
+        <a href="" class="circle-btn pagination-link prev disabled-btn"><!-- 
           <img src="./assets/icons/arrows_and__other_button_components/double_lower_than_light.svg" alt=""> -->
           <span><</span>
         </a>
@@ -124,7 +127,7 @@
     <div class="container">
       <div class="row">
         <div class="col-33">
-          <h2 class="footer-header">
+          <h2 class="section-heading footer-header">
             For questions<br />
             and suggestions
           </h2>
@@ -139,7 +142,7 @@
         </div>
 
         <div class="col-33">
-          <h2 class="footer-header">
+          <h2 class="section-heading footer-header">
             We are waiting <br />
             for your visit
           </h2>

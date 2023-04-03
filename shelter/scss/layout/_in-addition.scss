@@ -1,13 +1,17 @@
 .in-addition {
-  padding: 82px 0 90px;
+  padding: 82px 0 87px;
   background: #f6f6f6;
 
+  @media (max-width: 1200) {
+    padding: 85px 0 75px;
+  }
+
   .text-content {
-    padding: 77px;
+    padding: 0 77px;
     padding-right: 120px;
 
-    @media (max-width: 992px) {
-      padding: 0 26px;
+    @media (max-width: 1200px) {
+      padding: 0 56px 0 26px;
     }
   }
 
@@ -25,7 +29,7 @@
 
     .credit-card-img {
       width: initial;
-      margin-right: 10px;
+      margin-right: 13px;
     }
 
     .bank-card-num {
@@ -43,22 +47,37 @@
     font-size: 12px;
     line-height: 150%;
     color: #b2b2b2;
+    margin-top: 20px;
   }
 
   .in-addition-heading {
     margin-bottom: 16px;
   }
 
-  @media (max-width: 992px) {
+  .col-50 {
+
+    &.donation-dog-image {
+      transform: translateX(70px) scale(0.9);
+    }
+  }
+
+  @media (max-width: 1200px) {
     .col-50 {
       width: 100%;
 
       &.donation-dog-image {
         order: 1;
-        padding: 75px 0 25px;
-        transform: scale(1.2);
+        padding: 65px 0 25px;
+        transform: scale(1.15);
       }
     }
   }
 
+  @media (max-width: 576px) {
+    .col-50 {
+      &.donation-dog-image {
+        transform: scale(1);
+      }
+    }
+  }
 }
