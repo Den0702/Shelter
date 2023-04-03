@@ -1,6 +1,7 @@
 .main-footer {
   background: url("../assets/img/noise_transparent.png"),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+
   @media (max-width: 992px) {
     .container {
       max-width: 640px;
@@ -8,20 +9,24 @@
   }
 
   .col-33 {
-    padding-bottom: 45px;
-    padding-top: 56px;
+    padding-bottom: 28px;
+    padding-top: 59px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       width: 50%;
-      padding-top: 30px;
+      padding-top: 37px;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;  
     }
   }
 
   .col-33:nth-of-type(3) {
-    margin-top: 45px;
-    margin-bottom: 5px;
-    @media (max-width: 992px) {
-      margin-top: 0;
+    
+    @media (max-width: 1200px) {
+      margin-top: 12px;
+      padding-bottom: 43px;
     }
   }
 
@@ -29,9 +34,10 @@
   .col-33:nth-of-type(3) {
     padding-left: 39px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       padding-left: 20px;
     }
+
   }
 
   .dog-bg {
@@ -40,18 +46,18 @@
     background-position: right;
     background-repeat: no-repeat;
     min-height: 300px;
+    margin-top: 41px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       width: 100%;
       background-position: center;
+      
+      margin-top: 10px;
     }
   }
 
   .footer-header {
     color: #fff;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 
   .footer-content {
@@ -61,11 +67,11 @@
     letter-spacing: 0.06em;
     display: flex;
     align-items: center;
-    padding: 21px 0px;
+    padding: 8px 0px 33px;
     font-family: $secondary-font-family;
 
     &.right {
-      padding: 9px 0 24px;
+      padding: 0 0 30px;
     }
 
     .footer-icon {
@@ -74,7 +80,7 @@
     }
 
     .footer-content-details {
-      margin-left: 25px;
+      margin-left: 20px;
     }
   }
 
