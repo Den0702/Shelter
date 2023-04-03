@@ -397,6 +397,21 @@ h6 {
   max-width: 1108px;
 }
 @media (max-width: 1200px) {
+  .container.narrow {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container.narrow {
+    max-width: 430px;
+  }
+}
+@media (max-width: 576px) {
+  .container.narrow {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
@@ -406,14 +421,10 @@ h6 {
     max-width: 720px;
   }
 }
-@media (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
-}
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding: 0 25px;
   }
 }
 
@@ -517,17 +528,39 @@ h6 {
 .not-only {
   padding: 77px 0 0;
 }
+@media (max-width: 992px) {
+  .not-only {
+    padding: 0;
+  }
+}
 .not-only .not-only-bg {
   background-image: url(../assets/img/start-screen-puppy.png);
   background-repeat: no-repeat;
   background-position-x: right;
   padding-top: 0;
 }
+@media (max-width: 992px) {
+  .not-only .not-only-bg {
+    height: 1065px;
+    background-position: 140px bottom;
+    background-size: 80%;
+    margin: auto;
+  }
+}
 .not-only .not-only-bg .not-only-description {
-  width: 472px;
+  max-width: 472px;
   font-size: 20px;
   padding: 167px 0 240px;
   margin-right: auto;
+}
+@media (max-width: 992px) {
+  .not-only .not-only-bg .not-only-description {
+    padding: 50px 0;
+    margin: auto;
+  }
+  .not-only .not-only-bg .not-only-description .btn-holder {
+    text-align: center;
+  }
 }
 .not-only .not-only-bg .not-only-description .main-heading {
   font-size: 44px;
@@ -544,14 +577,25 @@ h6 {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .about {
   padding-bottom: 100px;
 }
+@media (max-width: 992px) {
+  .about {
+    padding-top: 60px;
+  }
+}
 .about .about-image-holder {
   text-align: center;
+}
+@media (max-width: 992px) {
+  .about .about-image-holder {
+    order: 1;
+    margin-top: 60px;
+  }
 }
 .about .about-image-holder .about-image {
   height: 100%;
@@ -559,6 +603,11 @@ h6 {
 }
 .about .about-content-holder {
   padding-right: 100px;
+}
+@media (max-width: 992px) {
+  .about .about-content-holder {
+    padding: 0;
+  }
 }
 .about .about-content-holder h2 {
   margin-top: 18px;
@@ -571,7 +620,7 @@ h6 {
 .our-friends {
   position: relative;
   text-align: center;
-  padding: 81px 0 99px;
+  padding: 83px 0 99px;
   background: #f6f6f6;
 }
 .our-friends .our-friends-btn {
@@ -586,6 +635,7 @@ h6 {
   padding: 0 56px;
   position: relative;
   margin-bottom: 80px;
+  margin-top: 42px;
 }
 .our-friends .slider .col-33 {
   padding: 0 25px;
@@ -601,6 +651,7 @@ h6 {
 .our-friends button.slider-btn {
   position: absolute;
   top: 50%;
+  transform: translateY(-15%);
 }
 .our-friends button.slider-btn svg {
   position: absolute;
@@ -713,26 +764,28 @@ h6 {
   background: #f6f6f6;
 }
 .in-addition .text-content {
-  padding-inline: 77px;
+  padding: 77px;
+  padding-right: 120px;
+}
+@media (max-width: 992px) {
+  .in-addition .text-content {
+    padding: 0 26px;
+  }
 }
 .in-addition .bank-info {
   letter-spacing: 0.06em;
   line-height: 110%;
 }
 .in-addition .bank-card {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  height: 39px;
-  width: 349px;
   background-color: #F1CDB3;
   border-radius: 9px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
 }
 .in-addition .bank-card .credit-card-img {
   width: initial;
-  margin-inline: 16px;
+  margin-right: 10px;
 }
 .in-addition .bank-card .bank-card-num {
   font-family: "Georgia";
@@ -746,7 +799,7 @@ h6 {
   font-style: italic;
   font-size: 12px;
   line-height: 150%;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 .in-addition .in-addition-heading {
   margin-bottom: 16px;
@@ -757,6 +810,8 @@ h6 {
   }
   .in-addition .col-50.donation-dog-image {
     order: 1;
+    padding: 75px 0 25px;
+    transform: scale(1.2);
   }
 }
 
@@ -774,11 +829,16 @@ h6 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: 73px;
+  margin-top: 70px;
 }
 .pets .pagination .pagination-link {
   margin: 0 11px;
   position: relative;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 22px;
 }
 .pets .pagination .pagination-link span {
   position: absolute;
@@ -793,22 +853,44 @@ h6 {
 }
 
 .main-footer {
-  background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
   /*   .footer-content:nth-child(2):first-of-type {
     padding-top: 20px;
   } */
+}
+@media (max-width: 992px) {
+  .main-footer .container {
+    max-width: 640px;
+  }
 }
 .main-footer .col-33 {
   padding-bottom: 45px;
   padding-top: 56px;
 }
+@media (max-width: 992px) {
+  .main-footer .col-33 {
+    width: 50%;
+    padding-top: 30px;
+  }
+}
 .main-footer .col-33:nth-of-type(3) {
   margin-top: 45px;
   margin-bottom: 5px;
 }
+@media (max-width: 992px) {
+  .main-footer .col-33:nth-of-type(3) {
+    margin-top: 0;
+  }
+}
 .main-footer .col-33:nth-of-type(2),
 .main-footer .col-33:nth-of-type(3) {
   padding-left: 39px;
+}
+@media (max-width: 992px) {
+  .main-footer .col-33:nth-of-type(2),
+.main-footer .col-33:nth-of-type(3) {
+    padding-left: 20px;
+  }
 }
 .main-footer .dog-bg {
   background-image: url("../assets/img/footer-puppy.png");
@@ -816,6 +898,12 @@ h6 {
   background-position: right;
   background-repeat: no-repeat;
   min-height: 300px;
+}
+@media (max-width: 992px) {
+  .main-footer .dog-bg {
+    width: 100%;
+    background-position: center;
+  }
 }
 .main-footer .footer-header {
   color: #fff;
@@ -845,5 +933,5 @@ h6 {
 }
 
 .start-screen-bg {
-  background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }/*# sourceMappingURL=style.css.map */
