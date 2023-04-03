@@ -1,8 +1,17 @@
 .about {
   padding-bottom: 100px;
+  @media (max-width: 992px) {
+    padding-top: 60px;
+  }
 
   .about-image-holder {
     text-align: center;
+
+    @media (max-width: 992px) {
+      order: 1;
+      margin-top: 60px;
+    }
+
     .about-image {
       height: 100%;
       width: auto;
@@ -11,6 +20,10 @@
 
   .about-content-holder {
     padding-right: 100px;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
 
     h2 {
       margin-top: 18px;
@@ -21,6 +34,4 @@
       margin-bottom: 24px;
     }
   }
-
-
 }

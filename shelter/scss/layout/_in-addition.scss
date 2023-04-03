@@ -3,7 +3,12 @@
   background: #f6f6f6;
 
   .text-content {
-    padding-inline: 77px;
+    padding: 77px;
+    padding-right: 120px;
+
+    @media (max-width: 992px) {
+      padding: 0 26px;
+    }
   }
 
   .bank-info {
@@ -12,20 +17,19 @@
   }
 
   .bank-card {
-    @include flexbox(nowrap);
-    @include flex-align(start, center);
-    height: 39px;
-    width: 349px;
     background-color: $bg-color-primary;
     border-radius: 9px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
 
     .credit-card-img {
       width: initial;
-      margin-inline: 16px;
+      margin-right: 10px;
     }
 
     .bank-card-num {
-      font-family: 'Georgia';
+      font-family: "Georgia";
       font-size: 20px;
       line-height: 115%;
       letter-spacing: 0.06em;
@@ -38,7 +42,7 @@
     font-style: italic;
     font-size: 12px;
     line-height: 150%;
-    color: #B2B2B2;
+    color: #b2b2b2;
   }
 
   .in-addition-heading {
@@ -51,7 +55,10 @@
 
       &.donation-dog-image {
         order: 1;
+        padding: 75px 0 25px;
+        transform: scale(1.2);
       }
     }
   }
+
 }

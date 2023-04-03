@@ -12,11 +12,16 @@
   .pagination {
     @include flexbox;
     justify-content: center;
-    margin-top: 73px;
+    margin-top: 70px;
 
     .pagination-link {
       margin: 0 11px;
       position: relative;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 22px;
 
 
       span {

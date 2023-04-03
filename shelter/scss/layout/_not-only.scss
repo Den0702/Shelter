@@ -1,17 +1,37 @@
 .not-only {
   padding: 77px 0 0;
-  
+
+  @media (max-width: 992px) {
+    padding: 0;
+  }
+
   .not-only-bg {
     background-image: url(../assets/img/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position-x: right;
     padding-top: 0;
 
+    @media (max-width: 992px) {
+      height: 1065px;
+      background-position: 140px bottom;
+      background-size: 80%;
+      margin: auto;
+    }
+
     .not-only-description {
-      width: 472px;
+      max-width: 472px;
       font-size: $regular-font-size;
       padding: 167px 0 240px;
       margin-right: auto;
+
+      @media (max-width: 992px) {
+        padding: 50px 0;
+        margin: auto;
+
+        .btn-holder {
+          text-align: center;
+        }
+      }
 
       .main-heading {
         font-size: 44px;
@@ -21,19 +41,19 @@
         line-height: 57px;
         letter-spacing: initial;
         margin-bottom: 38px;
+
       }
 
       &-paragraph {
         //@include primary-text(35px); //line-height is the parameter
-        font-family: 'Arial';
+        font-family: "Arial";
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
 
-        color: #CDCDCD;
+        color: #cdcdcd;
       }
     }
   }
-
 }
