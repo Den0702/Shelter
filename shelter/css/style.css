@@ -842,18 +842,24 @@ h6 {
   padding-top: 81px;
   padding-bottom: 48px;
 }
-.help .section-heading {
-  margin-bottom: 58px;
-}
 @media (max-width: 576px) {
-  .help .section-heading {
-    margin-bottom: 40px;
+  .help {
+    padding-top: 41px;
   }
+}
+.help .section-heading {
+  margin-bottom: 40px;
 }
 .help .row {
   justify-content: center;
   text-align: center;
   padding: 0px 20px 0 7px;
+}
+@media (max-width: 576px) {
+  .help .row {
+    justify-content: start;
+    padding: 0;
+  }
 }
 .help .row .infographic {
   width: 20%;
@@ -869,6 +875,7 @@ h6 {
 @media (max-width: 576px) {
   .help .row .infographic {
     width: 50%;
+    margin-bottom: 8px;
   }
 }
 .help .row .infographic h3 {
@@ -878,6 +885,12 @@ h6 {
   letter-spacing: 0.06em;
   color: #545454;
 }
+@media (max-width: 576px) {
+  .help .row .infographic h3 {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
 .help .row .infographic img {
   max-height: 60px;
   width: auto;
@@ -885,17 +898,37 @@ h6 {
 }
 @media (max-width: 576px) {
   .help .row .infographic img {
-    max-height: 54px;
+    max-height: 51px;
+    margin-bottom: 3px;
   }
 }
 .help .row .infographic:nth-of-type(1) {
   padding-left: 27px;
 }
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(1) {
+    padding: 0;
+    padding-right: 8px;
+  }
+}
 .help .row .infographic:nth-of-type(2) {
   padding-left: 27px;
 }
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(2) {
+    padding: 0;
+    padding-left: 6px;
+  }
+}
 .help .row .infographic:nth-of-type(3) {
   padding-left: 27px;
+}
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(3) {
+    padding-right: 13px;
+    padding-left: 0;
+    padding-top: 2px;
+  }
 }
 .help .row .infographic:nth-of-type(4) {
   padding-right: 35px;
@@ -905,9 +938,21 @@ h6 {
     padding-right: initial;
   }
 }
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(4) {
+    padding-top: 3px;
+  }
+}
 @media (max-width: 768px) {
   .help .row .infographic:nth-of-type(5) {
     padding-right: initial;
+  }
+}
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(5) {
+    padding-left: 0;
+    padding-right: 12px;
+    padding-top: 10px;
   }
 }
 .help .row .infographic:nth-of-type(6) {
@@ -918,12 +963,24 @@ h6 {
     padding-right: initial;
   }
 }
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(6) {
+    padding-top: 10px;
+  }
+}
 .help .row .infographic:nth-of-type(7) {
   padding-right: 98px;
 }
 @media (max-width: 768px) {
   .help .row .infographic:nth-of-type(7) {
     padding-right: initial;
+  }
+}
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(7) {
+    padding-right: 8px;
+    padding-left: 0;
+    padding-top: 5px;
   }
 }
 .help .row .infographic:nth-of-type(8) {
@@ -936,6 +993,13 @@ h6 {
     padding-left: 10px;
   }
 }
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(8) {
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 8px;
+  }
+}
 .help .row .infographic:nth-of-type(9) {
   padding-left: 38px;
 }
@@ -943,6 +1007,13 @@ h6 {
   .help .row .infographic:nth-of-type(9) {
     padding-right: initial;
     padding-left: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .help .row .infographic:nth-of-type(9) {
+    padding: 0;
+    padding-right: 9px;
+    padding-top: 5px;
   }
 }
 
