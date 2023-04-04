@@ -4,6 +4,10 @@
   
   .section-heading {
     margin-bottom: 58px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 40px;
+    }
   }
 
   .row {
@@ -37,6 +41,10 @@
         max-height: 60px;
         width: auto;
         margin-bottom: 10px;
+
+        @media (max-width: 576px) {
+          max-height: 54px;
+        }
       }
     }
 
