@@ -1,4 +1,10 @@
-console.log(`Самооценка: 
+/* let petsCards = document.querySelectorAll('.col-25');
+for (let index = 0; index < petsCards.length - 5; index++) {
+  const element = petsCards[index];
+  
+}
+ */
+console.log(`Самооценка: 90
 Страница Main (вписать кол-во баллов)
 
     Проверка верстки +7

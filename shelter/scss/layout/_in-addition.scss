@@ -2,8 +2,12 @@
   padding: 82px 0 87px;
   background: #f6f6f6;
 
-  @media (max-width: 1200) {
+  @media (max-width: 1200px) {
     padding: 85px 0 75px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 11px 0 10px;
   }
 
   .text-content {
@@ -13,11 +17,19 @@
     @media (max-width: 1200px) {
       padding: 0 56px 0 26px;
     }
+    @media (max-width: 576px) {
+      padding: 0;
+    }
   }
 
   .bank-info {
     letter-spacing: 0.06em;
     line-height: 110%;
+
+    @media (max-width: 576px) {
+      margin: 1.5em 0 1.7em;
+      letter-spacing: initial;
+    }
   }
 
   .bank-card {
@@ -39,6 +51,10 @@
       letter-spacing: 0.06em;
       color: #545454;
       margin: 0;
+
+      @media (max-width: 576px) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -76,7 +92,8 @@
   @media (max-width: 576px) {
     .col-50 {
       &.donation-dog-image {
-        transform: scale(1);
+        padding: 23px 0 25px;
+        transform: scale(0.92);
       }
     }
   }
