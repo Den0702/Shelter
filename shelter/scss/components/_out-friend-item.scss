@@ -4,11 +4,14 @@
   border-radius: 10px;
   background: #ffffff;
   overflow: hidden;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
+  padding-bottom: 47px;
   cursor: pointer;
   transition: all 0.3s;
 
+  @media (max-width: 576px) {
+    margin-bottom: 88px;
+  }
+  
   img {
     height: 267px;
     object-fit: cover;

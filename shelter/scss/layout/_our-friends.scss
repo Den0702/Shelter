@@ -8,6 +8,10 @@
     padding: 105px 0 99px;
   }
 
+  @media (max-width: 576px) {
+    padding: 57px 0 45px;
+  }
+
   .our-friends-btn {
     background: #f1cdb3;
     padding: 13px 42px;
@@ -26,6 +30,7 @@
 
     @media (max-width: 576px) {
       padding: 0;
+      margin-top: 44px;
     }
 
     .col-33 {
@@ -61,7 +66,7 @@
     transform: translateY(-72%);
 
     @media (max-width: 576px) {
-      top: 100%;
+      top: 94%;
     }
 
     svg {
@@ -75,7 +80,7 @@
       right: 0;
 
       @media (max-width: 576px) {
-        right: 30px;
+        right: 20%;
       }
 
       & > svg {
@@ -87,7 +92,7 @@
       left: 0;
 
       @media (max-width: 576px) {
-        left: 30px;
+        left: 20%;
       }
     }
 

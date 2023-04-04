@@ -407,10 +407,14 @@ h6 {
   border-radius: 10px;
   background: #ffffff;
   overflow: hidden;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
+  padding-bottom: 47px;
   cursor: pointer;
   transition: all 0.3s;
+}
+@media (max-width: 576px) {
+  .our-friends-item {
+    margin-bottom: 88px;
+  }
 }
 .our-friends-item img {
   height: 267px;
@@ -744,6 +748,11 @@ h6 {
     padding: 105px 0 99px;
   }
 }
+@media (max-width: 576px) {
+  .our-friends {
+    padding: 57px 0 45px;
+  }
+}
 .our-friends .our-friends-btn {
   background: #f1cdb3;
   padding: 13px 42px;
@@ -761,6 +770,7 @@ h6 {
 @media (max-width: 576px) {
   .our-friends .slider {
     padding: 0;
+    margin-top: 44px;
   }
 }
 .our-friends .slider .col-33 {
@@ -794,7 +804,7 @@ h6 {
 }
 @media (max-width: 576px) {
   .our-friends button.slider-btn {
-    top: 100%;
+    top: 94%;
   }
 }
 .our-friends button.slider-btn svg {
@@ -808,7 +818,7 @@ h6 {
 }
 @media (max-width: 576px) {
   .our-friends button.slider-btn.right {
-    right: 30px;
+    right: 20%;
   }
 }
 .our-friends button.slider-btn.right > svg {
@@ -819,7 +829,7 @@ h6 {
 }
 @media (max-width: 576px) {
   .our-friends button.slider-btn.left {
-    left: 30px;
+    left: 20%;
   }
 }
 .our-friends button.slider-btn.right:hover, .our-friends button.slider-btn.left:hover {
@@ -834,6 +844,11 @@ h6 {
 }
 .help .section-heading {
   margin-bottom: 58px;
+}
+@media (max-width: 576px) {
+  .help .section-heading {
+    margin-bottom: 40px;
+  }
 }
 .help .row {
   justify-content: center;
@@ -867,6 +882,11 @@ h6 {
   max-height: 60px;
   width: auto;
   margin-bottom: 10px;
+}
+@media (max-width: 576px) {
+  .help .row .infographic img {
+    max-height: 54px;
+  }
 }
 .help .row .infographic:nth-of-type(1) {
   padding-left: 27px;
