@@ -1,9 +1,9 @@
 .in-addition {
-  padding: 82px 0 87px;
+  padding: 80px 0 87px;
   background: #f6f6f6;
 
   @media (max-width: 1200px) {
-    padding: 85px 0 75px;
+    padding: 81px 0 91px;
   }
 
   @media (max-width: 576px) {
@@ -12,7 +12,7 @@
 
   .text-content {
     padding: 0 77px;
-    padding-right: 120px;
+    padding-right: 127px;
 
     @media (max-width: 1200px) {
       padding: 0 56px 0 26px;
@@ -73,7 +73,7 @@
   .col-50 {
 
     &.donation-dog-image {
-      transform: translateX(70px) scale(0.9);
+      transform: translateX(70px) translateY(-4px)scale(0.915);
     }
   }
 
@@ -84,7 +84,7 @@
       &.donation-dog-image {
         order: 1;
         padding: 65px 0 25px;
-        transform: scale(1.15);
+        transform: scale(1.17);
       }
     }
   }

@@ -1,7 +1,11 @@
 .help {
-  padding-top: 81px;
-  padding-bottom: 48px;
+  padding-top: 83px;
+  padding-bottom: 49px;
   
+  @media (max-width: 1200px) {
+    padding-bottom: 43px;
+  }
+
   @media (max-width: 576px) {
     padding-top: 41px;
   }
@@ -9,12 +13,20 @@
   .section-heading {
     margin-bottom: 40px;
 
+    @media (max-width: 1200px) {
+      margin-bottom: 56px;
+    }
   }
 
   .row {
     justify-content: center;
     text-align: center;
     padding: 0px 20px 0 7px;
+    margin-top: 56px;
+
+    @media (max-width: 1200px) {
+      margin-top: 0;//reset margin-top
+    }
 
     @media (max-width: 576px) {
       justify-content: start;
@@ -26,7 +38,7 @@
       margin-bottom: 32px;
       padding: 0 13px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         width: 33.33%;
         margin-bottom: 34px;
       }
@@ -77,7 +89,12 @@
       }
     }
     .infographic:nth-of-type(3) {
-      padding-left: 27px;
+      padding-left: 7px;
+
+      @media (max-width: 1200px) {
+        padding-left: 26px;
+      }
+
       @media (max-width: 576px) {
         padding-right: 13px;
         padding-left: 0;
@@ -87,7 +104,7 @@
     .infographic:nth-of-type(4) {
       padding-right: 35px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
       }
 
@@ -96,7 +113,7 @@
       }
     }
     .infographic:nth-of-type(5) {
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
       }
 
@@ -110,7 +127,7 @@
     .infographic:nth-of-type(6) {
       padding-right: 61px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
       }
       @media (max-width: 576px) {
@@ -121,7 +138,7 @@
     .infographic:nth-of-type(7) {
       padding-right: 98px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
       }
       @media (max-width: 576px) {
@@ -134,7 +151,7 @@
       padding-right: 58px;
       padding-left: 0;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
         padding-left: 10px;
       }
@@ -147,7 +164,7 @@
     .infographic:nth-of-type(9) {
       padding-left: 38px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         padding-right: initial;
         padding-left: 12px;
       }
