@@ -27,3 +27,14 @@
     letter-spacing: 0.06em;
   }
 }
+
+.pets-page {
+  .our-friends-item {
+    @media (max-width: 576px) {
+      margin-bottom: 33px;
+    }
+    &:not(.our-friends-item:nth-of-type(1)) {
+      display: none;
+    }
+  }
+}

@@ -19,15 +19,21 @@
 
     @media (max-width: 576px) {
       width: 100%;  
-      padding-top: 29px;
+      padding: 29px 0 0;
     }
   }
   
+  .col-33:nth-of-type(2) {
+    
+    @media (max-width: 576px) {
+      padding-top: 0;
+    }
+  }
   .col-33:nth-of-type(3) {
     
     @media (max-width: 1200px) {
       margin-top: 12px;
-      padding-bottom: 43px;
+      
     }
   }
 
@@ -43,6 +49,7 @@
 
     @media (max-width: 576px) {
       padding-left: 0;
+      margin-top: 0;
     }
 
   }
@@ -58,8 +65,12 @@
     @media (max-width: 1200px) {
       width: 100%;
       background-position: center;
-      
+      padding-bottom: 43px;
       margin-top: 10px;
+    }
+
+    @media (max-width: 576px) {
+      min-height: 270px;
     }
   }
 
@@ -75,7 +86,7 @@
     display: flex;
     align-items: center;
     padding: 8px 0px 33px;
-    font-family: $secondary-font-family;
+    font-family: $secondary-font-family;  
 
     &.right {
       padding: 0 0 30px;
