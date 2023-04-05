@@ -4,8 +4,8 @@
   padding: 103px 0 99px;
   background: #f6f6f6;
 
-  @media (max-width: 768px) {
-    padding: 105px 0 99px;
+  @media (max-width: 1200px) {
+    padding: 81px 0 99px;
   }
 
   @media (max-width: 576px) {
@@ -15,6 +15,7 @@
   .our-friends-btn {
     background: #f1cdb3;
     padding: 13px 42px;
+    margin-top: 34px;
 
     &:hover {
       background: #fddcc4;

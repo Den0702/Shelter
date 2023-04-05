@@ -48,10 +48,10 @@
 }
 
 .pets {
-  padding: 62px 0 102px;
+  padding: 83px 0 102px;
 
   @media (max-width: 576px) {
-    padding: 44px 0 102px;
+    padding: 44px 0 43px;
   }
 
   .row {
@@ -76,6 +76,10 @@
     justify-content: center;
     margin-top: 27px;
 
+    @media (max-width: 576px) {
+      margin-top: 11px;
+    }
+
     .pagination-link {
       margin: 0 11px;
       position: relative;
@@ -84,6 +88,18 @@
       letter-spacing: 2px;
       font-weight: 700;
       font-size: 22px;
+
+      @media (max-width: 576px) {
+        margin: 0 5px;
+        
+        &.first {
+          margin-left: 0;
+        }
+
+        &.last {
+          margin-right: 0;
+        }
+      }
 
       &.current {
         background-color: #F1CDB3;

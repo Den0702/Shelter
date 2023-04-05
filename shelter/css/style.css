@@ -429,13 +429,16 @@ h6 {
   letter-spacing: 0.06em;
 }
 
+.pets-page .our-friends-item {
+  margin-bottom: 33px;
+}
 @media (max-width: 576px) {
   .pets-page .our-friends-item {
     margin-bottom: 33px;
   }
-}
-.pets-page .our-friends-item:not(.our-friends-item:nth-of-type(1)) {
-  display: none;
+  .pets-page .our-friends-item.mobile-hidden {
+    display: none;
+  }
 }
 
 .container {
@@ -709,6 +712,7 @@ h6 {
 @media (max-width: 1200px) {
   .about {
     padding-top: 60px;
+    padding-bottom: 102px;
   }
 }
 @media (max-width: 576px) {
@@ -757,9 +761,9 @@ h6 {
   padding: 103px 0 99px;
   background: #f6f6f6;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .our-friends {
-    padding: 105px 0 99px;
+    padding: 81px 0 99px;
   }
 }
 @media (max-width: 576px) {
@@ -770,6 +774,7 @@ h6 {
 .our-friends .our-friends-btn {
   background: #f1cdb3;
   padding: 13px 42px;
+  margin-top: 34px;
 }
 .our-friends .our-friends-btn:hover {
   background: #fddcc4;
@@ -853,8 +858,13 @@ h6 {
 }
 
 .help {
-  padding-top: 81px;
-  padding-bottom: 48px;
+  padding-top: 83px;
+  padding-bottom: 49px;
+}
+@media (max-width: 1200px) {
+  .help {
+    padding-bottom: 43px;
+  }
 }
 @media (max-width: 576px) {
   .help {
@@ -864,10 +874,21 @@ h6 {
 .help .section-heading {
   margin-bottom: 40px;
 }
+@media (max-width: 1200px) {
+  .help .section-heading {
+    margin-bottom: 56px;
+  }
+}
 .help .row {
   justify-content: center;
   text-align: center;
   padding: 0px 20px 0 7px;
+  margin-top: 56px;
+}
+@media (max-width: 1200px) {
+  .help .row {
+    margin-top: 0;
+  }
 }
 @media (max-width: 576px) {
   .help .row {
@@ -880,7 +901,7 @@ h6 {
   margin-bottom: 32px;
   padding: 0 13px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic {
     width: 33.33%;
     margin-bottom: 34px;
@@ -935,7 +956,12 @@ h6 {
   }
 }
 .help .row .infographic:nth-of-type(3) {
-  padding-left: 27px;
+  padding-left: 7px;
+}
+@media (max-width: 1200px) {
+  .help .row .infographic:nth-of-type(3) {
+    padding-left: 26px;
+  }
 }
 @media (max-width: 576px) {
   .help .row .infographic:nth-of-type(3) {
@@ -947,7 +973,7 @@ h6 {
 .help .row .infographic:nth-of-type(4) {
   padding-right: 35px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(4) {
     padding-right: initial;
   }
@@ -957,7 +983,7 @@ h6 {
     padding-top: 3px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(5) {
     padding-right: initial;
   }
@@ -972,7 +998,7 @@ h6 {
 .help .row .infographic:nth-of-type(6) {
   padding-right: 61px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(6) {
     padding-right: initial;
   }
@@ -985,7 +1011,7 @@ h6 {
 .help .row .infographic:nth-of-type(7) {
   padding-right: 98px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(7) {
     padding-right: initial;
   }
@@ -1001,7 +1027,7 @@ h6 {
   padding-right: 58px;
   padding-left: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(8) {
     padding-right: initial;
     padding-left: 10px;
@@ -1017,7 +1043,7 @@ h6 {
 .help .row .infographic:nth-of-type(9) {
   padding-left: 38px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .help .row .infographic:nth-of-type(9) {
     padding-right: initial;
     padding-left: 12px;
@@ -1032,12 +1058,12 @@ h6 {
 }
 
 .in-addition {
-  padding: 82px 0 87px;
+  padding: 80px 0 87px;
   background: #f6f6f6;
 }
 @media (max-width: 1200px) {
   .in-addition {
-    padding: 85px 0 75px;
+    padding: 81px 0 91px;
   }
 }
 @media (max-width: 576px) {
@@ -1047,7 +1073,7 @@ h6 {
 }
 .in-addition .text-content {
   padding: 0 77px;
-  padding-right: 120px;
+  padding-right: 127px;
 }
 @media (max-width: 1200px) {
   .in-addition .text-content {
@@ -1104,7 +1130,7 @@ h6 {
   margin-bottom: 16px;
 }
 .in-addition .col-50.donation-dog-image {
-  transform: translateX(70px) scale(0.9);
+  transform: translateX(70px) translateY(-4px) scale(0.915);
 }
 @media (max-width: 1200px) {
   .in-addition .col-50 {
@@ -1113,7 +1139,7 @@ h6 {
   .in-addition .col-50.donation-dog-image {
     order: 1;
     padding: 65px 0 25px;
-    transform: scale(1.15);
+    transform: scale(1.17);
   }
 }
 @media (max-width: 576px) {
@@ -1150,11 +1176,11 @@ h6 {
 }
 
 .pets {
-  padding: 62px 0 102px;
+  padding: 83px 0 102px;
 }
 @media (max-width: 576px) {
   .pets {
-    padding: 44px 0 102px;
+    padding: 44px 0 43px;
   }
 }
 .pets .row {
@@ -1181,6 +1207,11 @@ h6 {
   justify-content: center;
   margin-top: 27px;
 }
+@media (max-width: 576px) {
+  .pets .pagination {
+    margin-top: 11px;
+  }
+}
 .pets .pagination .pagination-link {
   margin: 0 11px;
   position: relative;
@@ -1189,6 +1220,17 @@ h6 {
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 22px;
+}
+@media (max-width: 576px) {
+  .pets .pagination .pagination-link {
+    margin: 0 5px;
+  }
+  .pets .pagination .pagination-link.first {
+    margin-left: 0;
+  }
+  .pets .pagination .pagination-link.last {
+    margin-right: 0;
+  }
 }
 .pets .pagination .pagination-link.current {
   background-color: #F1CDB3;
@@ -1216,6 +1258,10 @@ h6 {
 
 .main-footer {
   background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  /*   .footer-content:nth-of-type(1),
+    .footer-content:nth-of-type(2) {
+      padding-left: 20px;
+    } */
   /*   .footer-content:nth-child(2):first-of-type {
     padding-top: 20px;
   } */
@@ -1232,7 +1278,7 @@ h6 {
 @media (max-width: 1200px) {
   .main-footer .col-33 {
     width: 50%;
-    padding-top: 37px;
+    padding-top: 32px;
   }
 }
 @media (max-width: 576px) {
@@ -1248,7 +1294,7 @@ h6 {
 }
 @media (max-width: 1200px) {
   .main-footer .col-33:nth-of-type(3) {
-    margin-top: 12px;
+    margin-top: 8px;
   }
 }
 .main-footer .col-33:nth-of-type(2),
@@ -1273,7 +1319,7 @@ h6 {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 310px;
   margin-top: 41px;
 }
 @media (max-width: 1200px) {
@@ -1311,13 +1357,6 @@ h6 {
 }
 .main-footer .footer-content .footer-content-details {
   margin-left: 20px;
-}
-.main-footer .footer-content .footer-content-details:nth-of-type(1) {
-  margin-left: 27px;
-}
-.main-footer .footer-content:nth-of-type(1),
-.main-footer .footer-content:nth-of-type(2) {
-  padding-left: 20px;
 }
 
 .start-screen-bg {
