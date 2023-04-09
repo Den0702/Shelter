@@ -83,7 +83,7 @@
       @include flexbox($flex-wrap: nowrap);
       justify-content: space-between;
 
-      @media (max-width: 576px) {
+      @media (max-width: 767px) {
         display: none;
       }
 
