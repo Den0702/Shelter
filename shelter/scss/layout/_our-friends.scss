@@ -26,37 +26,61 @@
   .slider {
     padding: 0 56px;
     position: relative;
-    margin-bottom: 27px;
-    margin-top: 61px;
-
-    @media (max-width: 576px) {
-      padding: 0;
-      margin-top: 44px;
-    }
+    margin-bottom: 80px;
 
     .col-33 {
-      padding: 0 48px;
-
-      @media (max-width: 1200px) {
-        padding: 0 21px;
-      }
+      padding: 0 25px;
     }
 
-    @media (max-width: 1200px) {
-      .col-33:nth-of-type(3) {
+
+    .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      
+      .slider-holder {
+        display: flex;
+        position: relative;
+        left: 0;
+        width: 166.66%;
+
+        @media (max-width: 1200px) {
+          width: 200%;
+        }
+
+        @media (max-width: 768px) {
+          width: 300%;
+        }
+
+        .col-33 {
+          position: relative;
+          transition: left 0.5s;
+
+          @media (max-width: 1200px) {
+            width: 50%;
+
+            &:last-of-type {
+              display: none;
+            }
+          }
+
+          @media (max-width: 768px) {
+            width: 100%;
+
+            &:first-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    
+
+    @media (max-width: 768px) {
+      .col-33:nth-of-type(1) {
         display: none;
       }
       .col-33 {
         width: 50%;
-      }
-    }
-    @media (max-width: 576px) {
-      .col-33:nth-of-type(2) {
-        display: none;
-      }
-
-      .col-33 {
-        width: 100%;
       }
     }
   }
@@ -64,25 +88,16 @@
   button.slider-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-72%);
-
-    @media (max-width: 576px) {
-      top: 94%;
-    }
 
     svg {
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 50%; 
       transform: translate(-50%, -50%);
     }
 
     &.right {
       right: 0;
-
-      @media (max-width: 576px) {
-        right: 20%;
-      }
 
       & > svg {
         transform: translate(-50%, -50%) rotate(180deg);
@@ -91,10 +106,6 @@
 
     &.left {
       left: 0;
-
-      @media (max-width: 576px) {
-        left: 20%;
-      }
     }
 
     &.right:hover,
