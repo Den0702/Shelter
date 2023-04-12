@@ -97,18 +97,61 @@ const pets = [
     diseases: ["deafness", "blindness"],
     parasites: ["lice", "fleas"],
   },
-];
+];  
 
 (function () {
   console.log("working");
+  const sliderHolder = document.querySelector(".slider-holder");
 
+  /*----------------------- Burger menu -----------------------*/
+  let mobileHamburger = document.querySelector('.mobile-hamburger');
+
+  mobileHamburger.addEventListener("click", (e) => {
+    let target = e.target;
+    let responsiveMenu = document.querySelector(".hamburger-menu");
+
+    if (target.closest('.mobile-hamburger') || target.closest('.hamburger-menu')) {
+      mobileHamburger.classList.toggle('active');
+      responsiveMenu.classList.toggle('active');
+      document.querySelector('body').classList.toggle('scroll-lock');
+    }
+  })
+
+  /*----------------------- Popup -----------------------*/
+  sliderHolder.addEventListener('click', function(e){
+    e.preventDefault();
+    if(e.target.tagName !== 'A') return
+    console.log(e.target.dataset)
+    const petIndex = Number(e.target.dataset.petindex)
+
+    const newPopupContainer = document.createElement('div')
+    newPopupContainer.classList.add('popup')
+    newPopupContainer.innerHTML = `
+    <div class="popup-inner">
+
+        <img src="${pets[petIndex].img}" alt="${pets[petIndex].name}" />
+        <h3>${pets[petIndex].name}</h3>
+    
+    </div>`;
+
+    document.body.appendChild(newPopupContainer)
+
+    newPopupContainer.addEventListener('click', function(e){
+        e.target.remove()
+    })
+
+    document.querySelector('.popup-inner').addEventListener('click', function(e){
+        e.stopPropagation();
+    })
+
+})
+  /* ----------------------- Carousel ----------------------- */
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-
-  const sliderHolder = document.querySelector(".slider-holder");
+  
   let initialLeft = -33.33;
 
   function setSlider() {
@@ -128,7 +171,12 @@ const pets = [
     }
   }
 
-  setSlider();
+  if (sliderHolder === null) {
+    return;
+
+  } else {
+    setSlider();
+  }
 
   for (let i = 0; i < 5; i++) {
     const random = getRandomInt(0, 7);
