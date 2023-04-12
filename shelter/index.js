@@ -97,35 +97,57 @@ const pets = [
     diseases: ["deafness", "blindness"],
     parasites: ["lice", "fleas"],
   },
-];  
+];
+
+function generateIndex(increment) {
+  let firstPetIndex = +document.querySelectorAll(".our-friends-item .secondary-btn")[0].dataset.petindex;
+  let lastPetIndex = +document.querySelectorAll(".our-friends-item .secondary-btn")[document.querySelectorAll(".our-friends-item .secondary-btn").length - 1].dataset.petindex;
+
+  if (increment) {
+    if (lastPetIndex >= 7) {
+      return 0;
+    }
+    return lastPetIndex + 1;
+  }
+
+  if (!increment) {
+    if (firstPetIndex <= 0) {
+      return 7;
+    }
+    return firstPetIndex - 1;
+  }
+}
 
 (function () {
   console.log("working");
   const sliderHolder = document.querySelector(".slider-holder");
 
   /*----------------------- Burger menu -----------------------*/
-  let mobileHamburger = document.querySelector('.mobile-hamburger');
+  let mobileHamburger = document.querySelector(".mobile-hamburger");
 
   mobileHamburger.addEventListener("click", (e) => {
     let target = e.target;
     let responsiveMenu = document.querySelector(".hamburger-menu");
 
-    if (target.closest('.mobile-hamburger') || target.closest('.hamburger-menu')) {
-      mobileHamburger.classList.toggle('active');
-      responsiveMenu.classList.toggle('active');
-      document.querySelector('body').classList.toggle('scroll-lock');
+    if (
+      target.closest(".mobile-hamburger") ||
+      target.closest(".hamburger-menu")
+    ) {
+      mobileHamburger.classList.toggle("active");
+      responsiveMenu.classList.toggle("active");
+      document.querySelector("body").classList.toggle("scroll-lock");
     }
-  })
+  });
 
   /*----------------------- Popup -----------------------*/
-  sliderHolder.addEventListener('click', function(e){
+  sliderHolder.addEventListener("click", function (e) {
     e.preventDefault();
-    if(e.target.tagName !== 'A') return
-    console.log(e.target.dataset)
-    const petIndex = Number(e.target.dataset.petindex)
+    if (e.target.tagName !== "A") return;
+    console.log(e.target.dataset);
+    const petIndex = Number(e.target.dataset.petindex);
 
-    const newPopupContainer = document.createElement('div')
-    newPopupContainer.classList.add('popup')
+    const newPopupContainer = document.createElement("div");
+    newPopupContainer.classList.add("popup");
     newPopupContainer.innerHTML = `
     <div class="popup-inner">
 
@@ -134,24 +156,20 @@ const pets = [
     
     </div>`;
 
-    document.body.appendChild(newPopupContainer)
+    document.body.appendChild(newPopupContainer);
 
-    newPopupContainer.addEventListener('click', function(e){
-        e.target.remove()
-    })
+    newPopupContainer.addEventListener("click", function (e) {
+      e.target.remove();
+    });
 
-    document.querySelector('.popup-inner').addEventListener('click', function(e){
+    document
+      .querySelector(".popup-inner")
+      .addEventListener("click", function (e) {
         e.stopPropagation();
-    })
-
-})
+      });
+  });
   /* ----------------------- Carousel ----------------------- */
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  
+
   let initialLeft = -33.33;
 
   function setSlider() {
@@ -173,19 +191,17 @@ const pets = [
 
   if (sliderHolder === null) {
     return;
-
   } else {
     setSlider();
   }
 
   for (let i = 0; i < 5; i++) {
-    const random = getRandomInt(0, 7);
     const newSlide = document.createElement("div");
     newSlide.classList.add("col-33");
     newSlide.innerHTML = `<div class="our-friends-item">
-        <img src="${pets[random].img}" alt="${pets[random].name}" />
-        <h3>${pets[random].name}</h3>
-        <a href="" class="secondary-btn" data-petIndex="${random}">Learn more</a>
+        <img src="${pets[i].img}" alt="${pets[i].name}" />
+        <h3>${pets[i].name}</h3>
+        <a href="" class="secondary-btn" data-petIndex="${i}">Learn more</a>
       </div>`;
     sliderHolder.appendChild(newSlide);
   }
@@ -194,25 +210,28 @@ const pets = [
     setSlider();
   });
 
-  function slide(directon) {
+  function slide(direction) {
     const sliderHolder = document.querySelector(".slider-holder");
     sliderHolder.style.left =
-      directon === "left"
+      direction === "left"
         ? initialLeft + initialLeft + "%"
         : initialLeft - initialLeft + "%";
     sliderHolder.style.transition = "left 0.5s ease-out";
 
     const newSlide = document.createElement("div");
     newSlide.classList.add("col-33");
-    const random = getRandomInt(0, 7);
+    const random = generateIndex(direction === "left");
+
     newSlide.innerHTML = `<div class="our-friends-item">
           <img src="${pets[random].img}" alt="${pets[random].name}" />
           <h3>${pets[random].name}</h3>
-          <a href="" class="secondary-btn" data-petIndex="${random}>Learn more</a>
+         
+          <a href="#" class="secondary-btn" data-petIndex="${random}">Learn more</a>
+         
         </div>`;
 
     const timeOut = setTimeout(function () {
-      if (directon === "left") {
+      if (direction === "left") {
         sliderHolder.append(newSlide);
         sliderHolder.firstElementChild.remove();
       } else {
@@ -233,5 +252,4 @@ const pets = [
   document
     .querySelector(".slider-btn.right")
     .addEventListener("click", () => slide("right"));
-
 })();
