@@ -9,6 +9,10 @@ html {
 body {
   font-family: $primary-font-family;
   font-size: 15px;
+  
+  &.scroll-lock {
+    overflow: hidden;
+  }
 }
 
 ul {

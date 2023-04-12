@@ -42,6 +42,34 @@
         .hamburger-line {
           border-bottom: 2px solid #000000;
         }
+
+        &.active {
+
+          &::before, 
+          &::after,
+          .hamburger-line {
+            transform: rotate(90deg);
+            transition: all .3s;
+          }
+  
+          &::before {
+            left: 60%;
+          }
+          &::after {
+            left: 30%;
+            top: 0;
+          }
+          .hamburger-line {
+            top: -8px;
+          }
+  
+        }
+      }
+
+      .hamburger-menu {
+        @media (max-width: 767px) {
+          background-color: $color-light-l;
+        }
       }
     }
   }
