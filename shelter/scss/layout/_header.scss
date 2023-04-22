@@ -13,6 +13,7 @@
       margin-top: 17px;
       z-index: 5;
       cursor: pointer;
+      transition: all .3s;
       
       &::before,
       &::after {
@@ -112,11 +113,16 @@
         display: none;
       }
 
+      &.active {
+        .menu-item {
+          margin: 0 85px;
+        }
+      }
+
       .menu-item {
         font-family: $secondary-font-family;
         font-weight: $primary-font-weight;
         padding: 19px 0 8px;
-        margin: 0 85px;
 
         &.active {
           border-bottom: 3px solid $bg-color-primary;
@@ -150,6 +156,7 @@
         padding-right: 30%;
         padding-top: 100px;
         font-size: 32px;
+        transition: all .3s;
         
   
         .menu-item {
