@@ -124,24 +124,25 @@ function generateIndex(increment) {
 
   /*----------------------- Burger menu -----------------------*/
   let mobileHamburger = document.querySelector(".mobile-hamburger");
-
-  mobileHamburger.addEventListener("click", (e) => {
+  let responsiveMenu = document.querySelector(".hamburger-menu");
+  
+  const handleResponsiveMenu = (e) => {
     let target = e.target;
-    let responsiveMenu = document.querySelector(".hamburger-menu");
 
-    if (
-      target.closest(".mobile-hamburger") ||
-      target.closest(".hamburger-menu")
-    ) {
+    if (target.closest(".mobile-hamburger") || target.closest(".hamburger-menu")) {
       mobileHamburger.classList.toggle("active");
       responsiveMenu.classList.toggle("active");
       document.querySelector("body").classList.toggle("scroll-lock");
     }
-  });
+  }
+
+  mobileHamburger.addEventListener("click", handleResponsiveMenu);
+  responsiveMenu.addEventListener("click", handleResponsiveMenu);
 
   /*----------------------- Popup -----------------------*/
   sliderHolder.addEventListener("click", function (e) {
     e.preventDefault();
+
     if (e.target.tagName !== "A") return;
     console.log(e.target.dataset);
     const petIndex = Number(e.target.dataset.petindex);

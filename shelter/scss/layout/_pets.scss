@@ -1,3 +1,7 @@
+.start-screen-bg {
+  background-color: #ffffff;
+}
+
 .pets-page {
   .main-header {
     .nav {
@@ -34,35 +38,28 @@
       }
 
       .mobile-hamburger {
-        
-        &::before,
-        &::after {
-          background-color: #000000;
-        }
+
         .hamburger-line {
           border-bottom: 2px solid #000000;
         }
 
         &.active {
 
-          &::before, 
-          &::after,
           .hamburger-line {
             transform: rotate(90deg);
             transition: all .3s;
-          }
+            
+            &:nth-of-type(1) {
+              left: -10px;
+              top: 10px;
+            }
   
-          &::before {
-            left: 60%;
+            &:nth-of-type(3) {
+              left: 10px;
+              top: -10px;
+            }
           }
-          &::after {
-            left: 30%;
-            top: 0;
-          }
-          .hamburger-line {
-            top: -8px;
-          }
-  
+          
         }
       }
 

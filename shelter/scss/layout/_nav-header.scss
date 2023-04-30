@@ -6,51 +6,36 @@
     
     @media (max-width: 767px) {
       display: block;
-      position: relative;
       width: 31px;
       height: 26px;
       margin-right: 3px;
       margin-top: 17px;
       z-index: 5;
       cursor: pointer;
-      transition: all .3s;
       
-      &::before,
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        background-color: #F1CDB3;
-      }
-
       .hamburger-line {
         display: block;
         position: relative;
         width: 100%;
         border-bottom: 2px solid #F1CDB3;
         margin: 8px 0;
+        transition: all .3s;
       }
 
       &.active {
-
-        &::before, 
-        &::after,
         .hamburger-line {
           transform: rotate(90deg);
           transition: all .3s;
-        }
 
-        &::before {
-          left: 60%;
-        }
-        &::after {
-          left: 30%;
-          top: 0;
-        }
-        .hamburger-line {
-          top: -8px;
+          &:nth-of-type(1) {
+            left: -10px;
+            top: 10px;
+          }
+
+          &:nth-of-type(3) {
+            left: 10px;
+            top: -10px;
+          }
         }
 
       }
