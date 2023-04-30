@@ -28,10 +28,16 @@
     position: relative;
     margin-bottom: 80px;
 
+    @media (max-width: 768px) {
+      padding: 0 25%;
+    } 
+    @media (max-width: 576px) {
+      padding: 0 10%;
+    } 
+
     .col-33 {
       padding: 0 25px;
     }
-
 
     .slider-wrapper {
       overflow: hidden;
@@ -106,6 +112,27 @@
 
     &.left {
       left: 0;
+    }
+
+    @media (max-width: 768px) {
+      &.right {
+        right: 100px;
+      }
+  
+      &.left {
+        left: 100px;
+      }
+    }
+    @media (max-width: 576px) {
+      top: 90%;
+
+      &.right {
+        right: 20%;
+      }
+  
+      &.left {
+        left: 20%;
+      }
     }
 
     &.right:hover,
