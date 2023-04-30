@@ -399,7 +399,7 @@ h6 {
   width: 50px;
   height: 50px;
 }
-.circle-btn:hover {
+.circle-btn:hover:not(.disabled-btn) {
   background-color: #FDDCC4;
   border-color: #FDDCC4;
   transition: all 0.3s;
@@ -407,6 +407,7 @@ h6 {
 
 .disabled-btn {
   border: 2px solid #CDCDCD;
+  cursor: initial;
 }
 
 .our-friends-item {
@@ -526,22 +527,12 @@ h6 {
 @media (max-width: 767px) {
   .main-header .mobile-hamburger {
     display: block;
-    position: relative;
     width: 31px;
     height: 26px;
     margin-right: 3px;
     margin-top: 17px;
     z-index: 5;
     cursor: pointer;
-    transition: all 0.3s;
-  }
-  .main-header .mobile-hamburger::before, .main-header .mobile-hamburger::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #F1CDB3;
   }
   .main-header .mobile-hamburger .hamburger-line {
     display: block;
@@ -549,21 +540,19 @@ h6 {
     width: 100%;
     border-bottom: 2px solid #F1CDB3;
     margin: 8px 0;
+    transition: all 0.3s;
   }
-  .main-header .mobile-hamburger.active::before, .main-header .mobile-hamburger.active::after,
-.main-header .mobile-hamburger.active .hamburger-line {
+  .main-header .mobile-hamburger.active .hamburger-line {
     transform: rotate(90deg);
     transition: all 0.3s;
   }
-  .main-header .mobile-hamburger.active::before {
-    left: 60%;
+  .main-header .mobile-hamburger.active .hamburger-line:nth-of-type(1) {
+    left: -10px;
+    top: 10px;
   }
-  .main-header .mobile-hamburger.active::after {
-    left: 30%;
-    top: 0;
-  }
-  .main-header .mobile-hamburger.active .hamburger-line {
-    top: -8px;
+  .main-header .mobile-hamburger.active .hamburger-line:nth-of-type(3) {
+    left: 10px;
+    top: -10px;
   }
 }
 .main-header .nav {
@@ -848,6 +837,16 @@ h6 {
   position: relative;
   margin-bottom: 80px;
 }
+@media (max-width: 768px) {
+  .our-friends .slider {
+    padding: 0 25%;
+  }
+}
+@media (max-width: 576px) {
+  .our-friends .slider {
+    padding: 0 10%;
+  }
+}
 .our-friends .slider .col-33 {
   padding: 0 25px;
 }
@@ -917,6 +916,25 @@ h6 {
 }
 .our-friends button.slider-btn.left {
   left: 0;
+}
+@media (max-width: 768px) {
+  .our-friends button.slider-btn.right {
+    right: 100px;
+  }
+  .our-friends button.slider-btn.left {
+    left: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .our-friends button.slider-btn {
+    top: 90%;
+  }
+  .our-friends button.slider-btn.right {
+    right: 20%;
+  }
+  .our-friends button.slider-btn.left {
+    left: 20%;
+  }
 }
 .our-friends button.slider-btn.right:hover, .our-friends button.slider-btn.left:hover {
   transition: all 0.3s;
@@ -1216,6 +1234,10 @@ h6 {
   }
 }
 
+.start-screen-bg {
+  background-color: #ffffff;
+}
+
 .pets-page .main-header .nav .logo .logo-title {
   color: #545454;
 }
@@ -1235,26 +1257,20 @@ h6 {
   color: #292929;
   transition: color 0.3s;
 }
-.pets-page .main-header .nav .mobile-hamburger::before, .pets-page .main-header .nav .mobile-hamburger::after {
-  background-color: #000000;
-}
 .pets-page .main-header .nav .mobile-hamburger .hamburger-line {
   border-bottom: 2px solid #000000;
 }
-.pets-page .main-header .nav .mobile-hamburger.active::before, .pets-page .main-header .nav .mobile-hamburger.active::after,
 .pets-page .main-header .nav .mobile-hamburger.active .hamburger-line {
   transform: rotate(90deg);
   transition: all 0.3s;
 }
-.pets-page .main-header .nav .mobile-hamburger.active::before {
-  left: 60%;
+.pets-page .main-header .nav .mobile-hamburger.active .hamburger-line:nth-of-type(1) {
+  left: -10px;
+  top: 10px;
 }
-.pets-page .main-header .nav .mobile-hamburger.active::after {
-  left: 30%;
-  top: 0;
-}
-.pets-page .main-header .nav .mobile-hamburger.active .hamburger-line {
-  top: -8px;
+.pets-page .main-header .nav .mobile-hamburger.active .hamburger-line:nth-of-type(3) {
+  left: 10px;
+  top: -10px;
 }
 @media (max-width: 767px) {
   .pets-page .main-header .nav .hamburger-menu {
@@ -1444,8 +1460,4 @@ h6 {
 
 .start-screen-bg {
   background: url("../assets/img/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
-}
-
-.start-screen-bg {
-  background-color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
