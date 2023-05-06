@@ -376,7 +376,6 @@ h6 {
 }
 
 .secondary-btn {
-  font-family: Georgia, sans-serif;
   border: 2px solid #f1cdb3;
   padding: 13px 42px;
 }
@@ -934,6 +933,7 @@ h6 {
   }
   .our-friends button.slider-btn.left {
     left: 20%;
+    z-index: 20;
   }
 }
 .our-friends button.slider-btn.right:hover, .our-friends button.slider-btn.left:hover {
