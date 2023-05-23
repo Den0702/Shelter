@@ -91,7 +91,7 @@ export const homeScripts = () => {
       }
 
       sliderHolder.style.left = initialLeft + "%";
-      /* sliderHolder.style.transition = "none"; */
+      sliderHolder.style.transition = "none";
       clearTimeout(timeOut);
     }, 500);
   }
