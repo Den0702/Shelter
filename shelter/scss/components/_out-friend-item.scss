@@ -7,14 +7,22 @@
   padding-bottom: 47px;
   cursor: pointer;
   transition: all 0.3s;
-
-  @media (max-width: 576px) {
-    margin-bottom: 88px;
+  
+  @media (min-width: 768px) {
+    margin: 20px 0;
   }
   
   img {
     height: 267px;
     object-fit: cover;
+  }
+  
+  @media (max-width: 576px) {
+    margin-bottom: 88px;
+
+    img {
+      height: auto;
+    }
   }
 
   &:hover {
