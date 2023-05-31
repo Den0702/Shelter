@@ -9,25 +9,26 @@ export const homeScripts = () => {
     )[document.querySelectorAll(".our-friends-item .secondary-btn").length - 1].dataset.petindex;
 
     if (increment) {
-      if (lastPetIndex >= 7) {
+      if (lastPetIndex === 7) {
         return 0;
       }
       return lastPetIndex + 1;
-    }
-
-    if (!increment) {
-      if (firstPetIndex <= 0) {
+    
+    } else if (!increment) {
+      if (firstPetIndex === 0) {
         return 7;
-      }
+      } 
       return firstPetIndex - 1;
     }
+     
   }
 
   console.log("working");
   const sliderHolder = document.querySelector(".slider-holder");
 
   /* ----------------------- Carousel ----------------------- */
-  let initialLeft = -33.33;
+  let initialLeft;
+  setSlider();
 
   function setSlider() {
     if (window.innerWidth >= 1200) {
@@ -46,8 +47,6 @@ export const homeScripts = () => {
     }
   }
 
-  setSlider();
-  
   for (let i = 0; i < 5; i++) {
     const newSlide = document.createElement("div");
     newSlide.classList.add("col-33");
@@ -59,29 +58,30 @@ export const homeScripts = () => {
     sliderHolder.appendChild(newSlide);
   }
 
-  window.addEventListener("resize", function () {
+  window.addEventListener("resize", () => {
     setSlider();
   });
 
   function slide(direction) {
-    const sliderHolder = document.querySelector(".slider-holder");
+
     sliderHolder.style.left =
       direction === "left"
         ? initialLeft + initialLeft + "%"
         : initialLeft - initialLeft + "%";
+
     sliderHolder.style.transition = "left 0.5s ease-out";
 
     const newSlide = document.createElement("div");
     newSlide.classList.add("col-33");
-    const random = generateIndex(direction === "left");
+    const next = generateIndex(direction === "left");
 
     newSlide.innerHTML = `<div class="our-friends-item">
-        <img src="${pets[random].img}" alt="${pets[random].name}" />
-        <h3>${pets[random].name}</h3>
-        <a href="#" class="secondary-btn" data-petIndex="${random}">Learn more</a>
+        <img src="${pets[next].img}" alt="${pets[next].name}" />
+        <h3>${pets[next].name}</h3>
+        <a href="#" class="secondary-btn" data-petIndex="${next}">Learn more</a>
       </div>`;
 
-    const timeOut = setTimeout(function () {
+    const timeOut = setTimeout(() => {
       if (direction === "left") {
         sliderHolder.append(newSlide);
         sliderHolder.firstElementChild.remove();
@@ -105,7 +105,7 @@ export const homeScripts = () => {
     .addEventListener("click", () => slide("right"));
 
   /*----------------------- Popup -----------------------*/
-  sliderHolder.addEventListener("click", function (e) {
+  sliderHolder.addEventListener("click", () => {
     e.preventDefault();
     if (e.target.tagName !== "A") return;
     console.log(e.target.dataset);
@@ -121,13 +121,13 @@ export const homeScripts = () => {
 
     document.body.appendChild(newPopupContainer);
 
-    newPopupContainer.addEventListener("click", function (e) {
+    newPopupContainer.addEventListener("click", () => {
       e.target.remove();
     });
 
     document
       .querySelector(".popup-inner")
-      .addEventListener("click", function (e) {
+      .addEventListener("click", () => {
         e.stopPropagation();
       });
   });
