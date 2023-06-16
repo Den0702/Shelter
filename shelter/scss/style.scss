@@ -1,23 +1,24 @@
-@import 'utils/variables';
-@import 'utils/mixins';
+@import './utils/variables';
+@import './utils/mixins';
 
-@import 'base/normalize';
-@import 'base/base';
-@import 'base/typography';
+@import './base/normalize';
+@import './base/base';
+@import './base/typography';
 
-@import 'components/buttons';
-@import 'components/out-friend-item';
+@import './components/buttons';
+@import './components/out-friend-item';
+@import './components/popup';
 
-@import 'layout/layout';
-@import 'layout/grid';
-@import 'layout/nav-header';
-@import 'layout/footer';
+@import './layout/layout';
+@import './layout/grid';
+@import './layout/nav-header';
+@import './layout/footer';
 
-@import 'pages/not-only';
-@import 'pages/about';
-@import 'pages/our-friends';
-@import 'pages/help';
-@import 'pages/in-addition';
-@import 'pages/home';
-@import 'pages/pets';
+@import './pages/not-only';
+@import './pages/about';
+@import './pages/our-friends';
+@import './pages/help';
+@import './pages/in-addition';
+@import './pages/home';
+@import './pages/pets';
 
