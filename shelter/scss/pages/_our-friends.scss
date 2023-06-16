@@ -123,16 +123,38 @@
         left: 100px;
       }
     }
+
+    @media (max-width: 650px) {
+      &.right {
+        right: 80px;
+      }
+  
+      &.left {
+        left: 80px;
+      }
+    }
     @media (max-width: 576px) {
       top: 90%;
 
       &.right {
-        right: 20%;
+        right: 25%;
       }
   
       &.left {
-        left: 20%;
-        z-index: 20;
+        left: 25%;
+        z-index: 15;
+      }
+    }
+    @media (max-width: 480px) {
+      top: 90%;
+
+      &.right {
+        right: 23%;
+      }
+  
+      &.left {
+        left: 23%;
+        z-index: 15;
       }
     }
 

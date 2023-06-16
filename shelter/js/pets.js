@@ -34,7 +34,7 @@ export const petsScripts = () => {
             <div class="our-friends-item">
               <img src="${randomPetsArr[i].img}" alt="${randomPetsArr[i].name}" />
               <h3>${randomPetsArr[i].name}</h3>
-              <a href="" class="secondary-btn">Learn more</a>
+              <a href="" class="secondary-btn" data-petName="${randomPetsArr[i].name}">Learn more</a>
             </div>
         `;
 
@@ -65,7 +65,7 @@ export const petsScripts = () => {
 
     renderPets(1);
     
-    btnNext.addEventListener("click", function (e) {
+    btnNext.addEventListener("click", (e) => {
       e.preventDefault();
       console.log("currentPage: " + currentPage);
     
@@ -77,7 +77,7 @@ export const petsScripts = () => {
       }
     });
     
-    btnPrev.addEventListener("click", function (e) {
+    btnPrev.addEventListener("click", (e) => {
       e.preventDefault();
     
       if (currentPage <= 1) return;
@@ -86,7 +86,7 @@ export const petsScripts = () => {
       renderPets(currentPage);
     });
     
-    btnFirst.addEventListener("click", function (e) {
+    btnFirst.addEventListener("click", (e) => {
       e.preventDefault();
     
       if (currentPage === 1) return;
@@ -95,7 +95,7 @@ export const petsScripts = () => {
       renderPets(currentPage);
     });
     
-    btnLast.addEventListener("click", function (e) {
+    btnLast.addEventListener("click", (e) => {
       e.preventDefault();
     
       if (currentPage === limit) return;

@@ -16,11 +16,13 @@
       }
 
       .menu {
+        @media (max-width: 767px) {
+          background-color: $color-light-l;
+        }
+
         .menu-item {
   
-          &.active {
-            border-bottom: 3px solid $bg-color-primary;
-  
+          &.active {  
             a {
               color: #292929;
             }
@@ -58,14 +60,7 @@
               left: 10px;
               top: -10px;
             }
-          }
-          
-        }
-      }
-
-      .hamburger-menu {
-        @media (max-width: 767px) {
-          background-color: $color-light-l;
+          }   
         }
       }
     }
