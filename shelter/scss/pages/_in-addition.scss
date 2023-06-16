@@ -10,16 +10,21 @@
     padding: 11px 0 10px;
   }
 
+  .row {
+    justify-content: center;
+  }
+
   .text-content {
     padding: 0 77px;
-    padding-right: 127px;
+    padding-right: 139px;
 
     @media (max-width: 1200px) {
-      padding: 0 56px 0 26px;
-    }
-    @media (max-width: 576px) {
+      max-width: 350px;
       padding: 0;
     }
+/*     @media (max-width: 576px) {
+      padding: 0 66px 0 36px;
+    } */
   }
 
   .bank-info {
@@ -33,11 +38,17 @@
   }
 
   .bank-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    padding: 10px;
+    background-color: #F1CDB3;
+    border-radius: 9px;
+    margin: auto;
+
     background-color: $bg-color-primary;
     border-radius: 9px;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
 
     .credit-card-img {
       width: initial;
@@ -54,6 +65,10 @@
 
       @media (max-width: 576px) {
         font-size: 15px;
+      }
+      
+      @media (max-width: 480px) {
+        font-size: 13px;
       }
     }
   }
