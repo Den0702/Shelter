@@ -1,8 +1,8 @@
 const pets = [
   {
     name: "Jennifer",
-    img: "../assets/img/pets/jennifer.png",
-    imgModal: "../assets/img/modal/jennifer.png",
+    img: "./assets/img/pets/jennifer.png",
+    imgModal: "./assets/img/modal/jennifer.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -14,8 +14,8 @@ const pets = [
   },
   {
     name: "Sophia",
-    img: "../assets/img/pets/sophia.png",
-    imgModal: "../assets/img/modal/sophia.png",
+    img: "./assets/img/pets/sophia.png",
+    imgModal: "./assets/img/modal/sophia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -27,8 +27,8 @@ const pets = [
   },
   {
     name: "Woody",
-    img: "../assets/img/pets/woody.png",
-    imgModal: "../assets/img/modal/woody.png",
+    img: "./assets/img/pets/woody.png",
+    imgModal: "./assets/img/modal/woody.png",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -40,8 +40,8 @@ const pets = [
   },
   {
     name: "Scarlett",
-    img: "../assets/img/pets/scarlett.png",
-    imgModal: "../assets/img/modal/scarlett.png",
+    img: "./assets/img/pets/scarlett.png",
+    imgModal: "./assets/img/modal/scarlett.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -53,8 +53,8 @@ const pets = [
   },
   {
     name: "Katrine",
-    img: "../assets/img/pets/katrine.png",
-    imgModal: "../assets/img/modal/katrine.png",
+    img: "./assets/img/pets/katrine.png",
+    imgModal: "./assets/img/modal/katrine.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -66,8 +66,8 @@ const pets = [
   },
   {
     name: "Timmy",
-    img: "../assets/img/pets/timmy.png",
-    imgModal: "../assets/img/modal/timmy.png",
+    img: "./assets/img/pets/timmy.png",
+    imgModal: "./assets/img/modal/timmy.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -79,8 +79,8 @@ const pets = [
   },
   {
     name: "Freddie",
-    img: "../assets/img/pets/freddie.png",
-    imgModal: "../assets/img/modal/freddie.png",
+    img: "./assets/img/pets/freddie.png",
+    imgModal: "./assets/img/modal/freddie.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -92,8 +92,8 @@ const pets = [
   },
   {
     name: "Charly",
-    img: "../assets/img/pets/charly.png",
-    imgModal: "../assets/img/modal/charly.png",
+    img: "./assets/img/pets/charly.png",
+    imgModal: "./assets/img/modal/charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
