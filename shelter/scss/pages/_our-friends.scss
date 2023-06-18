@@ -23,6 +23,12 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 715px;
+    }
+  }
+
   .slider {
     padding: 0 56px;
     position: relative;

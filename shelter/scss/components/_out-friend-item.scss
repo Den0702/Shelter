@@ -7,13 +7,14 @@
   padding-bottom: 47px;
   cursor: pointer;
   transition: all 0.3s;
-  max-width: 270px;
+  max-width: 300px;
   
   @media (min-width: 577px) {
     margin: 20px auto;
   }
   
   @media (max-width: 576px) {
+    max-width: 267px;
     margin-bottom: 88px;
     margin-top: 20px;
   }
@@ -24,8 +25,12 @@
   }
 
   img {
-    height: 267px;
+    height: 300px;
     object-fit: cover;
+
+    @media (max-width: 1300px) {
+      height: 267px;
+    }
 
     @media (max-width: 480px) {
       height: 225px;
