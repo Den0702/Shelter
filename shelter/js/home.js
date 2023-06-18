@@ -68,7 +68,7 @@ export const homeScripts = () => {
         ? initialLeft + initialLeft + "%"
         : initialLeft - initialLeft + "%";
 
-    sliderHolder.style.transition = "left 0.5s ease-out";
+    sliderHolder.style.transition = "left .3s ease-out";
 
     const newSlide = document.createElement("div");
     newSlide.classList.add("col-33");
@@ -92,7 +92,7 @@ export const homeScripts = () => {
       sliderHolder.style.left = initialLeft + "%";
       sliderHolder.style.transition = "none";
       clearTimeout(timeOut);
-    }, 500);
+    }, 300);
   }
 
   document

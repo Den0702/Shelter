@@ -10,6 +10,13 @@
     padding-top: 41px;
   }
 
+  .container {
+    @media (max-width: 576px) {
+      max-width: 100%;
+      padding: 0 12%;
+    }
+  }
+
   .section-heading {
     margin-bottom: 40px;
 

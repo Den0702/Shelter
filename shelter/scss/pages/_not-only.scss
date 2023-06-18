@@ -15,16 +15,24 @@
     background-position-x: right;
     padding-top: 0;
 
-    @media (max-width: 1200px) {
-      height: 1047px;
+    @media (max-width: 1300px) {
+      background-size: 62%;
       background-position: right bottom;
-      background-size: 575px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 966px;
+      background-size: 520px;
       margin: auto;
+    }
+
+    @media (max-width: 650px) {
+      height: 850px;
+      background-size: 70%;
     }
 
     @media (max-width: 576px) {
       height: 705px;
-      background-position: right bottom;
       background-size: 260px;
     }
 
@@ -47,6 +55,10 @@
         }
       }
 
+      @media (min-width: 1201px) and (max-width: 1300px) {
+        max-width: 435px;
+      }
+
       @media (max-width: 576px) {
         padding: 32px 0;
       }
@@ -60,6 +72,10 @@
         line-height: 57px;
         letter-spacing: initial;
         margin-bottom: 38px;
+
+        @media (min-width: 1201px) and (max-width: 1300px) {
+          width: 71%;
+        }
 
         @media (max-width: 576px) {
           width: 100%;

@@ -16,8 +16,6 @@ bodyOverlay.addEventListener("click", handleResponsiveMenu);
 function handleResponsiveMenu(e) {
   let targetElem = e.target;
 
-  //warunek, by rozwiazac problem z wykonywaniem sie handlera handleResponsiveMenu()
-  //zamiast close() przypadku klika na "body-overlay"
   if (document.querySelector('.popup-holder')) {
     close(e, targetElem);// must always be "body-overlay" here
   };
@@ -28,8 +26,7 @@ function handleResponsiveMenu(e) {
     toggleOverlay();
 
   } else if (targetElem.closest('.menu-item') || targetElem.closest('.body-overlay')) {
-    if (mobileHamburger.classList.contains('active')) {//zeby nie wykonywac instrukcji ponizej w przypadku, gdy jestesmy na rozdzielczosci powyzej 767px
-
+    if (mobileHamburger.classList.contains('active')) {
       mobileHamburger.classList.remove("active");
       responsiveMenu.classList.remove("active");
       document.querySelector("body").classList.remove("scroll-lock");
@@ -82,7 +79,7 @@ function open(e, petName) {
   toggleOverlay();
 
   document.querySelector('.popup-holder').addEventListener('click', e => close(e));
-  //blokuje zamkniecie popup'a, gdy klikamy w sam popup
+
   document.querySelector('.popup').addEventListener('click', e => {
     e.stopPropagation();
   });
