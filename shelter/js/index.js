@@ -56,7 +56,7 @@ function open(e, petName) {
   newPopupContainer.innerHTML = `
           <div class="popup-close">
             <button class="circle-btn popup-close-btn">
-              <img src="../assets/icons/arrows_and__other_button_components/cross.svg" class="close-cross" alt="close-cross">
+              <img src="./assets/icons/arrows_and__other_button_components/cross.svg" class="close-cross" alt="close-cross">
             </button>
           </div>
           <div class="popup">
