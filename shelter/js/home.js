@@ -77,7 +77,7 @@ export const homeScripts = () => {
     newSlide.innerHTML = `<div class="our-friends-item">
         <img src="${pets[i].img}" alt="${pets[i].name}" />
         <h3>${pets[i].name}</h3>
-        <a href="#" class="secondary-btn" data-petIndex="${i}" data-petName="${i}">Learn more</a>
+        <a href="#" class="secondary-btn" data-petIndex="${i}" data-petName="${pets[i].name}">Learn more</a>
       </div>`;
 
     const timeOut = setTimeout(() => {
